@@ -44,4 +44,4 @@ A modern, responsive tourism website for Rwanda built with React, Vite, and Tail
    git clone https://github.com/yourusername/rwanda-tourism.git
    cd rwanda-tourism
 
-# ngwino-urebe-urwanda
+# DECIFO TOURISM
