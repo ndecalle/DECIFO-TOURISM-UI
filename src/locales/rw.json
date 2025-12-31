@@ -1,0 +1,420 @@
+{
+  "general": {
+    "appName": "DECIFO TOURISM",
+    "tagline": "Uzahe kureba ubwiza bw'u Rwanda, Igihugu cy'Imisozi Igihumbi",
+    "readMore": "Soma Ibindi",
+    "viewAll": "Reba Byose",
+    "bookNow": "Saba Ubu",
+    "exploreMore": "Reba Ibindi",
+    "contactUs": "Twandikire",
+    "learnMore": "Menya Ibindi",
+    "loading": "Tegereza...",
+    "error": "Hari ikibazo cyabaye",
+    "notFound": "Ipaji ntiboneka",
+    "backToHome": "Subira ku Ipaji y'Ibanze",
+    "copyright": "Uburenganzira bwose bwihariwe"
+  },
+  "nav": {
+    "home": "Ahabanza",
+    "about": "Turi Bande",
+    "destinations": "Aho Ujya",
+    "culturalExperiences": "Umuco",
+    "tours": "Ingendo & Gahunda",
+    "gallery": "Amafoto",
+    "contact": "Twandikire",
+    "blog": "Inkuru"
+  },
+  "home": {
+    "hero": {
+      "title": "Murakaza neza kuri DECIFO TOURISM",
+      "subtitle": "Menya ubwiza bw'u Rwanda, Igihugu cy'Imisozi Igihumbi",
+      "cta": "Menya Ingendo"
+    },
+    "whyChooseUs": {
+      "title": "Kuki Wahitamo Twebwe",
+      "subtitle": "Uzahe kureba u Rwanda nk'uko utarigeze urubona mbere, hamwe n'abayobozi bacu b'inzobere n'ingendo zihariye",
+      "reasons": {
+        "guides": {
+          "title": "Abayobozi b'Ingendo b'Inzobere",
+          "description": "Abayobozi bacu ni abanyarwanda bazi neza umuco n'amateka y'u Rwanda"
+        },
+        "experiences": {
+          "title": "Ibikorwa Bitazibagirana",
+          "description": "Dutegura ingendo zitazibagirana zigaragaza ubwiza bw'u Rwanda n'umuco wabwo"
+        },
+        "service": {
+          "title": "Serivisi Idasanzwe",
+          "description": "Twishimira gutanga serivisi ihariye, ikurikije ibyo ukeneye kandi ikaguha amahoro mu rugendo rwawe rwose"
+        }
+      }
+    },
+    "featuredDestinations": {
+      "title": "Ahantu Hazwi Cyane",
+      "subtitle": "Uzahe kureba ahantu heza kandi hafite agaciro mu muco w'u Rwanda",
+      "viewAll": "Reba Ahantu Hose"
+    },
+    "testimonials": {
+      "title": "Ibyo Abakiriya Bacu Bavuga",
+      "subtitle": "Umva ibyo abashyitsi bacu bavuga ku Rwanda nyuma yo kurusobanukiwe hamwe natwe"
+    },
+    "cta": {
+      "title": "Witeguye Gusura u Rwanda?",
+      "subtitle": "Saba urugendo rwawe none kandi uzahe kureba ubwiza bw'Igihugu cy'Imisozi Igihumbi",
+      "browseTours": "Reba Ingendo",
+      "contactUs": "Twandikire"
+    },
+    "whyChooseUs": "Impamvu zo kuduhitamo",
+    "experiencedGuides": "Abayobora ba Mukerarugendo b'inararibonye",
+    "unforgettableExperiences": "Ibikorwa bitazibagirana",
+    "exceptionalService": "Serivisi idasanzwe",
+    "featuredDestinations": "Ahantu h'ingenzi",
+    "volcanoesPark": "Pariki y'Igihugu y'Ibirunga",
+    "lakeKivu": "Ikivu",
+    "genocideMemorials": "Inzibutso za Jenoside",
+    "testimonials": "Ibyo abakiriya bacu bavuga",
+    "ctaTitle": "Witeguye Kugera ku Rwanda?",
+    "browseTours": "Reba Ingendo",
+    "contactUs": "Tuvugishe"
+  },
+  "about": {
+    "hero": {
+      "title": "Turi Ba Nde",
+      "subtitle": "Menya ibijyanye n'ishyaka ryacu ryo kugaragaza ubwiza bw'u Rwanda"
+    },
+    "story": {
+      "title": "Amateka Yacu",
+      "content1": "DECIFO TOURISM yatangijwe n'intego yoroshye: gusangiza isi ubwiza budasanzwe n'umuco w'u Rwanda. Izina ryacu, risobanura ngo \"Ngwino Urebe u Rwanda Rwiza,\" rigaragaza ubwitange bwacu mu gutanga ibikorwa by'ukuri kandi byimbitse.",
+      "content2": "Ikipe yacu igizwe n'abayobozi b'ingendo b'abanyarwanda bafite ubumenyi bwimbitse ku mateka y'u Rwanda, inyamaswa, n'imigenzo. Twizera ko ubukerarugendo bugomba kugirira akamaro abaturage bo mu gace kandi bukagira uruhare mu kubungabunga ibidukikije, niyo mpamvu dukorana bya hafi n'abafatanyabikorwa bo mu gace kandi dushyigikira ibikorwa birambye.",
+      "content3": "Waba ushaka gusura ingagi, kureba imisozi itatse ubwiza, cyangwa kwiga umuco w'u Rwanda, twiyemeje gutanga ibikorwa bitazibagirana bigaragaza ubwiza bw'igihugu cyacu cyiza."
+    },
+    "values": {
+      "title": "Indangagaciro Zacu",
+      "subtitle": "Amahame ayobora ibyo dukora byose",
+      "community": {
+        "title": "Gufasha Abaturage",
+        "description": "Twizera gushyigikira abaturage bo mu gace no kureba ko ubukerarugendo bugirira akamaro abanyarwanda"
+      },
+      "sustainability": {
+        "title": "Kubungabunga Ibidukikije",
+        "description": "Twiyemeje kubungabunga no kugabanya ingaruka ku bidukikije mu bikorwa byacu byose"
+      },
+      "authenticity": {
+        "title": "Ibikorwa by'Ukuri",
+        "description": "Dutanga ibikorwa by'umuco by'ukuri byubahiriza imigenzo n'imihango y'abanyarwanda"
+      }
+    },
+    "team": {
+      "title": "Uzahe Guhura n'Ikipe Yacu",
+      "subtitle": "Abayobozi bacu b'ingendo n'abakozi bafite ishyaka ryo kugusangiza u Rwanda"
+    },
+    "cta": {
+      "title": "Witeguye Gusura u Rwanda Hamwe Natwe?",
+      "subtitle": "Reka ikipe yacu y'inzobere ikuyobore mu bitangaza by'u Rwanda",
+      "viewTours": "Reba Ingendo Zacu",
+      "contactUs": "Twandikire"
+    }
+  },
+"destinations": {
+  "hero": {
+    "title": "Aho Gusura",
+    "subtitle": "Sura ahantu heza cyane u Rwanda rufite"
+  },
+  "activities": "Ibikorwa:",
+  "exploreTours": "Sura Ingendo",
+  "cta": {
+    "title": "Witeguye Gusura Aha Hantu Hataratse Ubwiza?",
+    "subtitle": "Reka tugufashe gutegura urugendo rwiza mu Rwanda",
+    "viewTours": "Reba Ingendo Zacu",
+    "contactUs": "Tuvugishe"
+  },
+  "volcanoesPark": {
+    "name": "Pariki y'Igihugu y'Ibirunga",
+    "description": "Ubuhungiro bw'ingagi zo mu misozi n'inguge z'amabara ya zahabu.",
+    "longDescription": "Sura ishyamba ryiza rya Pariki y'Ibirunga, aho ingagi zo mu misozi n'ibindi binyabuzima bitandukanye bibarizwa.",
+    "activities": ["Gusura ingagi", "Gukurikirana inguge za zahabu", "Kugenda mu misozi"]
+  },
+  "lakeKivu": {
+    "name": "Ikivu",
+    "description": "Ikivu cyuzuye ituze, gitanga amafoto meza n'ibikorwa byo mu mazi.",
+    "longDescription": "Uruhuke ku nkombe z’Ikivu, ukore kayak, unishimire ubwiza bw’imisozi ibikikije.",
+    "activities": ["Kayak", "Kugenda mu bwato", "Koga"]
+  },
+  "genocideMemorials": {
+    "name": "Ahazirikanwa Jenoside",
+    "description": "Aho bibuka amateka y’u Rwanda n’imbaraga zarwo.",
+    "longDescription": "Sura inzibutso za Jenoside wige amateka y’u Rwanda, wubahe n’imbaraga z’abarokotse.",
+    "activities": ["Inyigisho ziyobowe", "Imurikabikorwa y’amateka"]
+  },
+  "nyungweForest": {
+    "name": "Ishyamba rya Nyungwe",
+    "description": "Ishyamba ry’ubwiza bw’umwimerere ryarimo inyamaswa zitandukanye n’inzira mu biti hejuru.",
+    "longDescription": "Menya ubuzima bw’inyamaswa muri Nyungwe, aho usanga inshabure, inyoni, n’inzira igaragara hejuru y’ibiti.",
+    "activities": ["Gukurikirana inshabure", "Kunyura ku nzira hejuru y'ibiti", "Kureba inyoni"]
+  },
+  "akageraPark": {
+    "name": "Pariki y'Igihugu y'Akagera",
+    "description": "Pariki y’imisozi n’ubutayu ifite inyamaswa zitandukanye n’ubwiza bw’ikirere.",
+    "longDescription": "Sura ubwiza bwa Pariki y’Akagera, aho usanga inyamaswa z'ingenzi nka Big Five n’ubutayu butangaje.",
+    "activities": ["Kugenda muri pariki", "Ingendo mu bwato", "Kureba inyoni"]
+  },
+  "kigaliCity": {
+    "name": "Umujyi wa Kigali",
+    "description": "Umurwa mukuru w’u Rwanda ufite umuco n’amateka akomeye.",
+    "longDescription": "Sura Kigali, umujyi uzwiho isuku, ahantu nyaburanga n’amasoko asabana.",
+    "activities": ["Gusura umujyi", "Gusura inzu ndangamurage", "Gucuruza mu masoko"]
+  }
+}
+,
+  "culturalExperiences": {
+    "hero": {
+      "title": "Ibikorwa by'Umuco",
+      "subtitle": "Uzahe kwiga umuco w'u Rwanda"
+    },
+    "intro": {
+      "title": "Menya Umuco w'u Rwanda",
+      "content1": "Umuco w'u Rwanda ni mwiza kandi utandukanye nk'imisozi yarwo. Kuva ku mbyino n'umuziki by'umuco, kugeza ku bunagaciro, ibiryo, n'ibikorwa by'abaturage, hari uburyo bwinshi bwo kwiga umuco w'u Rwanda.",
+      "content2": "Ibikorwa byacu by'umuco byateguwe kugira ngo bitange ibikorwa by'ukuri hamwe n'abaturage bo mu gace, gushyigikira imigenzo ya kera no guha abashyitsi amahirwe yo kumva ubuzima n'imigenzo y'abanyarwanda."
+    },
+    "bookExperience": "Saba Iki Gikorwa",
+    "testimonials": {
+      "title": "Ibyo Abakiriya Bacu Bavuga",
+      "subtitle": "Umva ibyo abashyitsi bavuga ku muco w'u Rwanda nyuma yo kuwusobanukiwe hamwe natwe"
+    },
+    "cta": {
+      "title": "Witeguye Kwiga Umuco w'u Rwanda?",
+      "subtitle": "Saba igikorwa cy'umuco cyangwa ushyire ibikorwa by'umuco mu rugendo rwawe rwihariye",
+      "viewTours": "Reba Ingendo Zacu",
+      "contactUs": "Twandikire"
+    }
+  },
+  "tours": {
+    "hero": {
+      "title": "Ingendo & Gahunda",
+      "subtitle": "Menya ingendo zacu zateguwe neza kugira ngo ubone ibyiza by'u Rwanda"
+    },
+    "featuredTours": {
+      "title": "Ingendo Zacu Zizwi",
+      "subtitle": "Reba ingendo zacu zizwi cyane, zateguwe kugira ngo zigaragaze ibyiza by'u Rwanda, inyamaswa, n'umuco",
+      "nyungweForest": {
+        "price": "200 $ ku muntu"
+      },
+      "rwandaHighlights": {
+        "title": "Ibikorwa By'ingenzi mu Rwanda",
+        "description": "Menya ibyiza byose by'u Rwanda muri uru rugendo rwuzuye.",
+        "duration": "Iminsi 7",
+        "price": "1500 $ ku muntu"
+      }
+    },
+    "customTours": {
+      "title": "Ingendo Zihariye",
+      "subtitle": "Twihariye mu gutegura ingendo zikurikije ibyo ukunda, igihe ufite, n'amafaranga ushaka gutanga",
+      "inquire": "Baza Ubu",
+      "family": {
+        "title": "Ibikorwa by'Imiryango",
+        "description": "Ingendo zateguwe ku miryango ishaka gusura u Rwanda hamwe."
+      },
+      "honeymoon": {
+        "title": "Pakeji za Mbere y'Ubukwe",
+        "description": "Ahantu h'ubwiza ku bashakanye bashya mu Rwanda."
+      },
+      "photography": {
+        "title": "Ingendo zo Gufotora",
+        "description": "Fata amafoto y'ubwiza bw'u Rwanda mu ngendo ziyobowe."
+      },
+      "birdwatching": {
+        "title": "Ingendo zo Kwitegereza Ibisiga",
+        "description": "Menya ibisiga bitandukanye by'u Rwanda hamwe n'inzobere."
+      },
+      "inquireNow": "Baza Ubu",
+      "designYourOwn": {
+        "title": "Tegura Urugendo rwawe",
+        "description": "Hanga gahunda y'urugendo ukurikije ibyo ukunda.",
+        "cta": "Tangira Gahunda"
+      }
+    },
+    "designYourOwn": {
+      "title": "Tegura Urugendo Rwawe",
+      "subtitle": "Ntubona ibyo ushaka? Reka tugutegurire urugendo rukurikije ibyo ukunda n'ibyo wifuza",
+      "cta": "Tangira Gutegura Urugendo Rwawe Rwihariye"
+    },
+    "included": {
+      "title": "Ibiri mu Giciro",
+      "items": [
+        "Abayobozi b'ingendo bavuga icyongereza",
+        "Uburyo bwo gutwara bwiza mu modoka za 4x4",
+        "Aho kurara nk'uko byagaragajwe mu rugendo",
+        "Amafunguro nk'uko yagaragajwe mu rugendo",
+        "Amafaranga yose yo kwinjira mu bigo n'ibikorwa byavuzwe",
+        "Amazi mu macupa mu gihe cy'ingendo"
+      ]
+    },
+    "notIncluded": {
+      "title": "Ibitari mu Giciro",
+      "items": [
+        "Indege mpuzamahanga",
+        "Amafaranga ya viza (niba akenewe)",
+        "Ubwishingizi bw'urugendo (bugomba kubaho)",
+        "Amafaranga y'ibintu byawe (ibindi bintu, ibinyobwa, n'ibindi)",
+        "Amafaranga y'ingororano ku bayobozi n'abakozi",
+        "Ibikorwa bitavuzwe mu rugendo"
+      ]
+    },
+    "cta": {
+      "title": "Witeguye Gusaba Urugendo Rwawe mu Rwanda?",
+      "subtitle": "Twandikire none kugira ngo ufate umwanya wawe cyangwa ubaze ku ngendo zihariye",
+      "bookNow": "Saba Ubu",
+      "requestCustom": "Saba Urugendo Rwihariye"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Amafoto",
+      "subtitle": "Reba u Rwanda binyuze mu mafoto yacu meza"
+    },
+    "categories": {
+      "all": "Byose",
+      "wildlife": "Inyamaswa",
+      "landscapes": "Imisozi",
+      "culture": "Umuco",
+      "activities": "Ibikorwa"
+    },
+    "noImages": "Nta mafoto abonetse muri iyi cyiciro.",
+    "cta": {
+      "title": "Uzahe Kureba u Rwanda Ubwawe",
+      "subtitle": "Amafoto ashobora kugaragaza gusa igice cy'ubwiza bw'u Rwanda. Uzahe ku rugendo rutazibagirana",
+      "browseTours": "Reba Ingendo",
+      "contactUs": "Twandikire"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Twandikire",
+      "subtitle": "Twandikire kugira ngo utegure urugendo rwawe mu Rwanda"
+    },
+    "getInTouch": {
+      "title": "Twandikire",
+      "content": "Ufite ibibazo ku ngendo zacu cyangwa ukeneye ubufasha mu gutegura urugendo rwawe mu Rwanda? Ikipe yacu iri hano kugira ngo igufashe. Uzuza ifishi cyangwa utwandikire ukoresha amakuru ari hasi."
+    },
+    "info": {
+      "location": {
+        "title": "Aho Duherereye",
+        "value": "Kigali, Rwanda"
+      },
+      "phone": {
+        "title": "Telefoni",
+        "value": "+250 780 258 219"
+      },
+      "email": {
+        "title": "Imeyili",
+        "value": "info@ngwinourebe.rw"
+      },
+      "hours": {
+        "title": "Amasaha y'Akazi",
+        "weekdays": "Kuwa Mbere - Kuwa Gatanu: 8:00 - 18:00",
+        "saturday": "Kuwa Gatandatu: 9:00 - 16:00",
+        "sunday": "Ku Cyumweru: Twihagaritse"
+      }
+    },
+    "followUs": "Dukurikire",
+    "form": {
+      "title": "Twandikire",
+      "name": "Amazina Yawe",
+      "email": "Imeyili Yawe",
+      "phone": "Telefoni Yawe",
+      "tourInterest": "Urugendo Ushaka",
+      "selectTour": "Hitamo urugendo",
+      "message": "Ubutumwa Bwawe",
+      "submit": "Ohereza Ubutumwa",
+      "success": "Urakoze ku butumwa bwawe! Tuzakugarukira vuba."
+    },
+    "location": {
+      "title": "Aho Duherereye",
+      "subtitle": "Uzahe gusura ibiro byacu i Kigali, Rwanda"
+    },
+    "faq": {
+      "title": "Ibibazo Bibazwa Kenshi",
+      "subtitle": "Bona ibisubizo ku bibazo bisanzwe ku rugendo mu Rwanda",
+      "questions": {
+        "bestTime": {
+          "question": "Ni ryari igihe cyiza cyo gusura u Rwanda?",
+          "answer": "U Rwanda rushobora gusurwa mu mwaka wose. Ibihe by'izuba (Kamena kugeza Nzeri na Ukuboza kugeza Gashyantare) ni byiza cyane mu gusura ingagi no kureba inyamaswa. Ibihe by'imvura bitanga imisozi itatse ubwiza kandi nta bantu benshi baba bahari."
+        },
+        "visa": {
+          "question": "Nkeneye viza yo gusura u Rwanda?",
+          "answer": "Abashyitsi benshi bashobora kubona viza iyo bageze mu gihugu cyangwa bakayisaba kuri interineti binyuze ku rubuga rw'Abinjira n'Abasohoka mu Rwanda. Abaturage bamwe ntibakeneye viza. Turagusaba kureba amakuru ya viza aheruka mbere y'urugendo rwawe."
+        },
+        "gorillaTrekking": {
+          "question": "Gusura ingagi bisaba amafaranga angana iki?",
+          "answer": "Uruhushya rwo gusura ingagi rusaba $1,500 ku muntu ku banyamahanga bataba abaturage. Ibi birimo amafaranga yo kwinjira muri pariki n'urugendo ruyobowe. Twebwe dukora ibijyanye n'impushya zose ku bakiriya bacu."
+        },
+        "safety": {
+          "question": "U Rwanda rutekanye ku basura?",
+          "answer": "U Rwanda rufatwa nk'imwe mu bihugu bitekanye cyane muri Afurika. Rufite igipimo cyo hasi cy'ubugizi bwa nabi, ubuyobozi buhamye, n'ibikorwa remezo byiza. Nk'uko bimeze ahantu hose, ingamba zisanzwe z'urugendo zigomba kubahirizwa."
+        },
+        "languages": {
+          "question": "Ni izihe ndimi zivugwa mu Rwanda?",
+          "answer": "Indimi zemewe ni Ikinyarwanda, Icyongereza, Igifaransa, n'Igiswahili. Icyongereza kivugwa cyane mu duce tw'ubukerarugendo, kandi abayobozi bacu bavuga neza Icyongereza."
+        }
+      }
+    },
+    "cta": {
+      "title": "Witeguye Gutangira Gutegura Urugendo Rwawe?",
+      "subtitle": "Twandikire none kandi reka ikipe yacu y'inzobere igufashe gutegura urugendo rwiza mu Rwanda",
+      "callUs": "Duhamagare Ubu"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Inkuru Zacu",
+      "subtitle": "Ibitekerezo, inama, n'inkuru z'u Rwanda"
+    },
+    "readMore": "Soma Ibindi →",
+    "search": {
+      "title": "Gushakisha",
+      "placeholder": "Shakisha mu nkuru..."
+    },
+    "categories": {
+      "title": "Ibyiciro"
+    },
+    "recentPosts": {
+      "title": "Inkuru Nshya"
+    },
+    "subscribe": {
+      "title": "Iyandikishe ku Butumwa Bwacu",
+      "subtitle": "Bona amakuru mashya, inama, n'ibiciro bidasanzwe mu gasanduku k'imeyili yawe",
+      "placeholder": "Imeyili yawe",
+      "button": "Iyandikishe"
+    },
+    "pagination": {
+      "previous": "Ibanza",
+      "next": "Ibikurikira"
+    },
+    "cta": {
+      "title": "Witeguye Gusura u Rwanda?",
+      "subtitle": "Hindura izi nkuru zibe ibyawe. Saba urugendo hamwe natwe none",
+      "viewTours": "Reba Ingendo Zacu",
+      "contactUs": "Twandikire"
+    }
+  },
+  "footer": {
+    "companyInfo": "Uzahe kureba ubwiza bw'u Rwanda, Igihugu cy'Imisozi Igihumbi, hamwe n'abayobozi bacu b'inzobere n'ibikorwa bitazibagirana.",
+    "quickLinks": "Aho Ugera Vuba",
+    "popularDestinations": "Ahantu Hazwi Cyane",
+    "contactUs": "Twandikire",
+    "copyright": "© {year} DECIFO TOURISM. Uburenganzira bwose bwihariwe."
+  },
+  "errors": {
+    "required": "Iki gice girakenewe",
+    "invalidEmail": "Nyamuneka shyiramo imeyili ikora",
+    "invalidPhone": "Nyamuneka shyiramo telefoni ikora",
+    "minLength": "Iki gice kigomba kugira nibura inyuguti {length}",
+    "maxLength": "Iki gice kigomba kugira inyuguti zitarenze {length}",
+    "serverError": "Hari ikibazo cyabaye. Nyamuneka ongera ugerageze nyuma."
+  },
+  "errorBoundary": {
+    "title": "Ikintu cyagenze nabi",
+    "message": "Tubabajwe n'uko habayeho ikosa mu gihe cyo kwerekana uru rupapuro.",
+    "reload": "Subiramo Urupapuro"
+  }
+}
+

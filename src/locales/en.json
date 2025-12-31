@@ -1,0 +1,529 @@
+{
+  "general": {
+    "appName": "DECIFO TOURISM",
+    "tagline": "Discover the beauty of Rwanda, the Land of a Thousand Hills",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "bookNow": "Book Now",
+    "exploreMore": "Explore More",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": "Page not found",
+    "backToHome": "Back to Home",
+    "copyright": "All rights reserved"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "destinations": "Destinations",
+    "culturalExperiences": "Cultural Experiences",
+    "tours": "Tours & Packages",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero": {
+      "title": "DECIFO TOURISM",
+      "subtitle": "Discover the beauty of the Land of a Thousand Hills",
+      "cta": "Explore Tours"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "subtitle": "Experience Rwanda like never before with our expert guides and customized tours",
+      "reasons": {
+        "guides": {
+          "title": "Experienced Tour Guides",
+          "description": "Our guides are knowledgeable locals who provide authentic insights into Rwandan culture and history"
+        },
+        "experiences": {
+          "title": "Unforgettable Experiences",
+          "description": "We create memorable journeys that showcase the best of Rwanda's natural beauty and cultural heritage"
+        },
+        "service": {
+          "title": "Exceptional Service",
+          "description": "We pride ourselves on personalized service, ensuring your comfort and satisfaction throughout your journey"
+        }
+      }
+    },
+    "featuredDestinations": {
+      "title": "Featured Destinations",
+      "subtitle": "Explore the most beautiful and culturally significant places in Rwanda",
+      "viewAll": "View All Destinations"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Hear from travelers who have experienced Rwanda with us"
+    },
+    "cta": {
+      "title": "Ready to Experience Rwanda?",
+      "subtitle": "Book your tour today and discover the beauty of the Land of a Thousand Hills",
+      "browseTours": "Browse Tours",
+      "contactUs": "Contact Us"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Learn about our passion for showcasing the beauty of Rwanda"
+    },
+    "story": {
+      "title": "Our Story",
+      "content1": "DECIFO TOURISM was founded with a simple mission: to share the incredible beauty and rich culture of Rwanda with the world. Our name, which translates to \"Come and See Beautiful Rwanda,\" embodies our commitment to providing authentic and immersive experiences.",
+      "content2": "Our team consists of passionate local guides who have deep knowledge of Rwanda's history, wildlife, and traditions. We believe that tourism should benefit local communities and contribute to conservation efforts, which is why we work closely with local partners and support sustainable practices.",
+      "content3": "Whether you're interested in gorilla trekking, exploring the stunning landscapes, or immersing yourself in Rwandan culture, we are dedicated to creating unforgettable experiences that showcase the best of our beautiful country."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide everything we do",
+      "community": {
+        "title": "Community Engagement",
+        "description": "We believe in supporting local communities and ensuring that tourism benefits the people of Rwanda"
+      },
+      "sustainability": {
+        "title": "Environmental Sustainability",
+        "description": "We are committed to conservation and minimizing our environmental footprint in all our operations"
+      },
+      "authenticity": {
+        "title": "Authentic Experiences",
+        "description": "We provide genuine cultural interactions and experiences that respect local traditions and customs"
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Our experienced guides and staff are passionate about sharing Rwanda with you"
+    },
+    "cta": {
+      "title": "Ready to Explore Rwanda with Us?",
+      "subtitle": "Let our experienced team guide you through the wonders of Rwanda",
+      "viewTours": "View Our Tours",
+      "contactUs": "Contact Us"
+    }
+  },
+  "destinations": {
+    "hero": {
+      "title": "Destinations",
+      "subtitle": "Explore the most beautiful places Rwanda has to offer"
+    },
+    "activities": "Activities:",
+    "exploreTours": "Explore Tours",
+    "cta": {
+      "title": "Ready to Explore These Amazing Destinations?",
+      "subtitle": "Let us help you plan the perfect Rwanda itinerary",
+      "viewTours": "View Our Tours",
+      "contactUs": "Contact Us"
+    },
+    "volcanoesPark": {
+      "name": "Volcanoes National Park",
+      "description": "A haven for mountain gorillas and golden monkeys.",
+      "longDescription": "Explore the lush forests of Volcanoes National Park, home to the majestic mountain gorillas and a variety of wildlife.",
+      "activities": ["Gorilla trekking", "Golden monkey tracking", "Hiking"]
+    },
+    "lakeKivu": {
+      "name": "Lake Kivu",
+      "description": "A serene lake offering breathtaking views and water activities.",
+      "longDescription": "Relax by the tranquil waters of Lake Kivu, enjoy kayaking, and explore the scenic beauty of the surrounding hills.",
+      "activities": ["Kayaking", "Boat rides", "Swimming"]
+    },
+    "genocideMemorials": {
+      "name": "Genocide Memorials",
+      "description": "Sites commemorating Rwanda's history and resilience.",
+      "longDescription": "Visit the genocide memorials to learn about Rwanda's history and honor the resilience of its people.",
+      "activities": ["Guided tours", "Educational exhibits"]
+    },
+    "nyungweForest": {
+      "name": "Nyungwe Forest",
+      "description": "A pristine rainforest with diverse wildlife and canopy walks.",
+      "longDescription": "Discover the biodiversity of Nyungwe Forest, known for its chimpanzees, birds, and the iconic canopy walk.",
+      "activities": ["Chimpanzee trekking", "Canopy walk", "Birdwatching"]
+    },
+    "akageraPark": {
+      "name": "Akagera National Park",
+      "description": "A savannah park with diverse wildlife and scenic landscapes.",
+      "longDescription": "Experience the beauty of Akagera National Park, home to the Big Five and stunning savannah landscapes.",
+      "activities": ["Game drives", "Boat safaris", "Birdwatching"]
+    },
+    "kigaliCity": {
+      "name": "Kigali City",
+      "description": "The vibrant capital of Rwanda with rich culture and history.",
+      "longDescription": "Explore Kigali City, known for its cleanliness, cultural landmarks, and bustling markets.",
+      "activities": ["City tours", "Museum visits", "Local markets"]
+    }
+  },
+  "culturalExperiences": {
+    "hero": {
+      "title": "Cultural Experiences",
+      "subtitle": "Learn about Rwanda's living traditions"
+    },
+    "intro": {
+      "title": "Discover Rwandan Culture",
+      "content1": "Rwandan culture is vibrant and varied, shaped by its landscapes and communities. From traditional dance and music to food and crafts, there are many ways to experience local life.",
+      "content2": "Our cultural experiences are designed to offer authentic interactions with local communities, support traditional practices, and give visitors the opportunity to learn about Rwandan customs and daily life."
+    },
+    "bookExperience": "Book this experience",
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Hear from travelers who have experienced Rwandan culture with us"
+    },
+    "featuredTours": {
+      "title": "Our Featured Tours",
+      "subtitle": "Explore our most popular tour packages, designed to showcase the best of Rwanda's natural beauty, wildlife, and culture",
+      "nyungweForest": {
+        "price": "$200 per person"
+      },
+      "rwandaHighlights": {
+        "title": "Rwanda Highlights",
+        "description": "Experience the best of Rwanda in this comprehensive tour.",
+        "duration": "7 days",
+        "price": "$1500 per person"
+      },
+      "gorillaTrekking": {
+        "title": "Gorilla Trekking",
+        "description": "Experience the thrill of trekking through Rwanda's lush forests to see mountain gorillas in their natural habitat.",
+        "duration": "3 days",
+        "price": "$1500"
+      },
+      "lakeKivu": {
+        "title": "Lake Kivu Adventure",
+        "description": "Relax by the serene waters of Lake Kivu and enjoy water activities like kayaking and boat rides.",
+        "duration": "2 days",
+        "price": "$800"
+      },
+      "culturalHeritage": {
+        "title": "Cultural Heritage Tour",
+        "description": "Discover Rwanda's rich cultural heritage through museum visits and traditional performances.",
+        "duration": "1 day",
+        "price": "$200"
+      },
+      "kigaliCity": {
+        "title": "Kigali City Tour",
+        "description": "Explore Kigali's vibrant culture, historical landmarks, and bustling markets.",
+        "duration": "Half Day",
+        "price": "$100"
+      },
+      "nyungweForest": {
+        "title": "Nyungwe Forest Adventure",
+        "description": "Hike through Nyungwe Forest and experience its breathtaking canopy walk.",
+        "duration": "2 Days",
+        "price": "$600"
+      }
+    },
+    "customTours": {
+      "title": "Customized Tours",
+      "subtitle": "We specialize in creating personalized itineraries tailored to your interests, timeframe, and budget",
+      "inquire": "Inquire Now",
+      "family": {
+        "title": "Family Adventures",
+        "description": "Tailored tours for families to explore Rwanda together."
+      },
+      "honeymoon": {
+        "title": "Honeymoon Packages",
+        "description": "Romantic getaways for newlyweds in Rwanda."
+      },
+      "photography": {
+        "title": "Photography Tours",
+        "description": "Capture Rwanda's beauty with guided photography tours."
+      },
+      "birdwatching": {
+        "title": "Birdwatching Tours",
+        "description": "Discover Rwanda's diverse bird species with expert guides."
+      },
+      "inquireNow": "Inquire Now",
+      "designYourOwn": {
+        "title": "Design Your Own Tour",
+        "description": "Create a custom itinerary based on your preferences.",
+        "cta": "Start Planning"
+      }
+    },
+    "designYourOwn": {
+      "title": "Design Your Own Tour",
+      "subtitle": "Can't find exactly what you're looking for? Let us create a custom itinerary based on your preferences and interests",
+      "cta": "Start Planning Your Custom Tour"
+    },
+    "included": {
+      "title": "What's Included",
+      "items": [
+        "Professional English-speaking guides",
+        "Comfortable transportation in 4x4 vehicles",
+        "Accommodation as specified in the itinerary",
+        "Meals as specified in the itinerary",
+        "All park entrance fees and activities mentioned",
+        "Bottled water during tours"
+      ]
+    },
+    "notIncluded": {
+      "title": "What's Not Included",
+      "items": [
+        "International flights",
+        "Visa fees (if applicable)",
+        "Travel insurance (mandatory)",
+        "Personal expenses (souvenirs, drinks, etc.)",
+        "Tips for guides and staff",
+        "Activities not mentioned in the itinerary"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Book Your Rwanda Adventure?",
+      "subtitle": "Contact us today to secure your spot or inquire about custom tour options",
+      "bookNow": "Book Now",
+      "requestCustom": "Request Custom Tour",
+      "viewTours": "View Our Tours",
+      "contactUs": "Contact Us"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Gallery",
+      "subtitle": "Explore Rwanda through our collection of stunning images"
+    },
+    "categories": {
+      "all": "All",
+      "wildlife": "Wildlife",
+      "landscapes": "Landscapes",
+      "culture": "Culture",
+      "activities": "Activities"
+    },
+    "noImages": "No images found in this category.",
+    "cta": {
+      "title": "Experience Rwanda in Person",
+      "subtitle": "Photos can only capture a fraction of Rwanda's beauty. Join us for an unforgettable journey",
+      "browseTours": "Browse Tours",
+      "contactUs": "Contact Us"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch to plan your Rwanda adventure"
+    },
+    "getInTouch": {
+      "title": "Get In Touch",
+      "content": "Have questions about our tours or need help planning your trip to Rwanda? Our team is here to assist you. Fill out the form or contact us directly using the information below."
+    },
+    "info": {
+      "location": {
+        "title": "Our Location",
+        "value": "Kigali, Rwanda"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "value": "+250 780 258 219"
+      },
+      "email": {
+        "title": "Email Address",
+        "value": "info@ngwinourebe.rw"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
+        "saturday": "Saturday: 9:00 AM - 4:00 PM",
+        "sunday": "Sunday: Closed"
+      }
+    },
+    "followUs": "Follow Us",
+    "form": {
+      "title": "Get in Touch",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "tourInterest": "Tour Interest",
+      "selectTour": "Select a tour",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you for your message! We will get back to you soon."
+    },
+    "location": {
+      "title": "Our Location",
+      "subtitle": "Visit our office in Kigali, Rwanda"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about traveling in Rwanda",
+      "questions": {
+        "bestTime": {
+          "question": "What is the best time to visit Rwanda?",
+          "answer": "Rwanda can be visited year-round. The dry seasons (June to September and December to February) are ideal for gorilla trekking and wildlife viewing. The wet seasons offer lush landscapes and are less crowded."
+        },
+        "visa": {
+          "question": "Do I need a visa to visit Rwanda?",
+          "answer": "Most visitors can obtain a visa on arrival or apply online through the Rwanda Immigration website. Citizens of some countries are exempt from visa requirements. We recommend checking the latest visa information before your trip."
+        },
+        "gorillaTrekking": {
+          "question": "How much does gorilla trekking cost?",
+          "answer": "Gorilla trekking permits cost $1,500 per person for foreign non-residents. This includes park entrance fees and a guided trek. We handle all permit arrangements for our clients."
+        },
+        "safety": {
+          "question": "Is Rwanda safe for tourists?",
+          "answer": "Rwanda is considered one of the safest countries in Africa. It has low crime rates, stable governance, and excellent infrastructure. As with any destination, normal travel precautions should be observed."
+        },
+        "languages": {
+          "question": "What languages are spoken in Rwanda?",
+          "answer": "The official languages are Kinyarwanda, English, French, and Swahili. English is widely spoken in tourist areas, and our guides are fluent in English."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Planning Your Trip?",
+      "subtitle": "Contact us today and let our expert team help you create the perfect Rwanda itinerary",
+      "callUs": "Call Us Now"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Our Blog",
+      "subtitle": "Insights, tips, and stories from Rwanda"
+    },
+    "readMore": "Read More →",
+    "search": {
+      "title": "Search",
+      "placeholder": "Search blog..."
+    },
+    "categories": {
+      "title": "Categories"
+    },
+    "recentPosts": {
+      "title": "Recent Posts"
+    },
+    "subscribe": {
+      "title": "Subscribe to Our Newsletter",
+      "subtitle": "Get the latest updates, tips, and special offers delivered directly to your inbox",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "cta": {
+      "title": "Ready to Experience Rwanda?",
+      "subtitle": "Turn these stories into your own adventures. Book a tour with us today",
+      "viewTours": "View Our Tours",
+      "contactUs": "Contact Us"
+    }
+  },
+  "footer": {
+    "companyInfo": "Discover the beauty of Rwanda, the Land of a Thousand Hills, with our expert guides and unforgettable experiences.",
+    "quickLinks": "Quick Links",
+    "popularDestinations": "Popular Destinations",
+    "contactUs": "Contact Us",
+    "copyright": "© {year} DECIFO TOURISM. All rights reserved."
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "minLength": "This field must be at least {length} characters",
+    "maxLength": "This field must be less than {length} characters",
+    "serverError": "An error occurred. Please try again later."
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "message": "We're sorry, but an error occurred while rendering this page.",
+    "reload": "Reload Page"
+  },
+  "tours": {
+    "hero": {
+      "title": "Tours & Travel",
+      "subtitle": "Explore our carefully curated tours to experience all that Rwanda has to offer"
+    },
+    "featuredTours": {
+      "title": "Featured Tours",
+      "subtitle": "Browse our most popular tours showcasing Rwanda's natural beauty, wildlife, and culture",
+      "nyungweForest": {
+        "title": "Nyungwe Forest Tour",
+        "description": "Visit Nyungwe Forest and enjoy the canopy walk among the treetops.",
+        "duration": "2 days",
+        "price": "$600 per person"
+      },
+      "rwandaHighlights": {
+        "title": "Rwanda Highlights",
+        "description": "See the best of Rwanda on this comprehensive tour.",
+        "duration": "7 days",
+        "price": "$1500 per person"
+      },
+      "gorillaTrekking": {
+        "title": "Gorilla Trekking",
+        "description": "Experience the thrill of trekking through Rwanda's lush forests to see mountain gorillas in their natural habitat.",
+        "duration": "3 days",
+        "price": "$1500"
+      },
+      "lakeKivu": {
+        "title": "Lake Kivu Tour",
+        "description": "Relax on the sparkling waters of Lake Kivu and enjoy activities like boat rides and kayaking.",
+        "duration": "2 days",
+        "price": "$800"
+      },
+      "culturalHeritage": {
+        "title": "Rwandan Cultural Heritage",
+        "description": "Learn about Rwanda's history and culture through visits to museums, traditional villages, and cultural centers.",
+        "duration": "1 day",
+        "price": "$200"
+      },
+      "kigaliCity": {
+        "title": "Kigali City Tour",
+        "description": "Explore the city of Kigali, full of culture, history and modern attractions.",
+        "duration": "Half Day",
+        "price": "$100"
+      }
+    }
+    ,
+    "customTours": {
+      "title": "Customized Tours",
+      "subtitle": "We specialize in creating personalized itineraries tailored to your interests, timeframe, and budget",
+      "inquire": "Inquire Now",
+      "family": {
+        "title": "Family Adventures",
+        "description": "Tailored tours for families to explore Rwanda together."
+      },
+      "honeymoon": {
+        "title": "Honeymoon Packages",
+        "description": "Romantic getaways for newlyweds in Rwanda."
+      },
+      "photography": {
+        "title": "Photography Tours",
+        "description": "Capture Rwanda's beauty with guided photography tours."
+      },
+      "birdwatching": {
+        "title": "Birdwatching Tours",
+        "description": "Discover Rwanda's diverse bird species with expert guides."
+      },
+      "inquireNow": "Inquire Now",
+      "designYourOwn": {
+        "title": "Design Your Own Tour",
+        "description": "Create a custom itinerary based on your preferences.",
+        "cta": "Start Planning"
+      }
+    },
+    "cta": {
+      "title": "Ready to Book Your Rwanda Adventure?",
+      "subtitle": "Contact us today to secure your spot or inquire about custom tour options",
+      "bookNow": "Book Now",
+      "requestCustom": "Request Custom Tour"
+    },
+    "included": {
+      "title": "What's Included",
+      "items": [
+        "Professional English-speaking guides",
+        "Comfortable transportation in 4x4 vehicles",
+        "Accommodation as specified in the itinerary",
+        "Meals as specified in the itinerary",
+        "All park entrance fees and activities mentioned",
+        "Bottled water during tours"
+      ]
+    },
+    "notIncluded": {
+      "title": "What's Not Included",
+      "items": [
+        "International flights",
+        "Visa fees (if applicable)",
+        "Travel insurance (mandatory)",
+        "Personal expenses (souvenirs, drinks, etc.)",
+        "Tips for guides and staff",
+        "Activities not mentioned in the itinerary"
+      ]
+    }
+  }
+  }
+  

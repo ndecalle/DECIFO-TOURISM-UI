@@ -1,0 +1,448 @@
+{
+  "general": {
+    "appName": "DECIFO TOURISM",
+    "tagline": "Découvrez la beauté du Rwanda, le Pays des Mille Collines",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tout",
+    "bookNow": "Réserver Maintenant",
+    "exploreMore": "Explorer Plus",
+    "contactUs": "Contactez-Nous",
+    "learnMore": "En Savoir Plus",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "notFound": "Page non trouvée",
+    "backToHome": "Retour à l'Accueil",
+    "copyright": "Tous droits réservés"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "destinations": "Destinations",
+    "culturalExperiences": "Expériences Culturelles",
+    "tours": "Circuits & Forfaits",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenue au Tourisme au DECIFO TOURISM",
+      "subtitle": "Découvrez la beauté du Rwanda, le Pays des Mille Collines",
+      "cta": "Découvrez les Circuits"
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi Nous Choisir",
+      "subtitle": "Découvrez le Rwanda comme jamais auparavant avec nos guides experts et nos circuits personnalisés",
+      "reasons": {
+        "guides": {
+          "title": "Guides Touristiques Expérimentés",
+          "description": "Nos guides sont des locaux compétents qui offrent des perspectives authentiques sur la culture et l'histoire rwandaises"
+        },
+        "experiences": {
+          "title": "Expériences Inoubliables",
+          "description": "Nous créons des voyages mémorables qui mettent en valeur le meilleur de la beauté naturelle et du patrimoine culturel du Rwanda"
+        },
+        "service": {
+          "title": "Service Exceptionnel",
+          "description": "Nous sommes fiers de notre service personnalisé, assurant votre confort et votre satisfaction tout au long de votre voyage"
+        }
+      }
+    },
+    "featuredDestinations": {
+      "title": "Destinations Vedettes",
+      "subtitle": "Explorez les lieux les plus beaux et culturellement significatifs du Rwanda",
+      "viewAll": "Voir Toutes les Destinations"
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "subtitle": "Écoutez les voyageurs qui ont découvert le Rwanda avec nous"
+    },
+    "cta": {
+      "title": "Prêt à Découvrir le Rwanda?",
+      "subtitle": "Réservez votre circuit aujourd'hui et découvrez la beauté du Pays des Mille Collines",
+      "browseTours": "Parcourir les Circuits",
+      "contactUs": "Contactez-Nous"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "À Propos de Nous",
+      "subtitle": "Découvrez notre passion pour mettre en valeur la beauté du Rwanda"
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "content1": "DECIFO TOURISM a été fondé avec une mission simple : partager l'incroyable beauté et la riche culture du Rwanda avec le monde. Notre nom, qui se traduit par \"Venez et Voyez le Beau Rwanda\", incarne notre engagement à offrir des expériences authentiques et immersives.",
+      "content2": "Notre équipe est composée de guides locaux passionnés qui ont une connaissance approfondie de l'histoire, de la faune et des traditions du Rwanda. Nous croyons que le tourisme devrait profiter aux communautés locales et contribuer aux efforts de conservation, c'est pourquoi nous travaillons en étroite collaboration avec des partenaires locaux et soutenons des pratiques durables.",
+      "content3": "Que vous soyez intéressé par le trekking des gorilles, l'exploration des paysages époustouflants ou l'immersion dans la culture rwandaise, nous nous engageons à créer des expériences inoubliables qui mettent en valeur le meilleur de notre magnifique pays."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "subtitle": "Les principes qui guident tout ce que nous faisons",
+      "community": {
+        "title": "Engagement Communautaire",
+        "description": "Nous croyons au soutien des communautés locales et veillons à ce que le tourisme profite au peuple rwandais"
+      },
+      "sustainability": {
+        "title": "Durabilité Environnementale",
+        "description": "Nous nous engageons à la conservation et à minimiser notre empreinte environnementale dans toutes nos opérations"
+      },
+      "authenticity": {
+        "title": "Expériences Authentiques",
+        "description": "Nous offrons des interactions et des expériences culturelles authentiques qui respectent les traditions et coutumes locales"
+      }
+    },
+    "team": {
+      "title": "Rencontrez Notre Équipe",
+      "subtitle": "Nos guides et notre personnel expérimentés sont passionnés par le partage du Rwanda avec vous"
+    },
+    "cta": {
+      "title": "Prêt à Explorer le Rwanda avec Nous?",
+      "subtitle": "Laissez notre équipe expérimentée vous guider à travers les merveilles du Rwanda",
+      "viewTours": "Voir Nos Circuits",
+      "contactUs": "Contactez-Nous"
+    }
+  },
+"destinations": {
+  "hero": {
+    "title": "Destinations",
+    "subtitle": "Découvrez les plus beaux endroits que le Rwanda a à offrir"
+  },
+  "activities": "Activités :",
+  "exploreTours": "Explorer les circuits",
+  "cta": {
+    "title": "Prêt à explorer ces destinations incroyables ?",
+    "subtitle": "Laissez-nous vous aider à planifier l'itinéraire parfait au Rwanda",
+    "viewTours": "Voir nos circuits",
+    "contactUs": "Contactez-nous"
+  },
+  "volcanoesPark": {
+    "name": "Parc National des Volcans",
+    "description": "Un refuge pour les gorilles de montagne et les singes dorés.",
+    "longDescription": "Explorez les forêts luxuriantes du Parc National des Volcans, abritant les majestueux gorilles de montagne et une variété d'animaux sauvages.",
+    "activities": ["Randonnée avec les gorilles", "Observation des singes dorés", "Randonnée pédestre"]
+  },
+  "lakeKivu": {
+    "name": "Lac Kivu",
+    "description": "Un lac serein offrant des vues imprenables et des activités nautiques.",
+    "longDescription": "Détendez-vous au bord des eaux tranquilles du lac Kivu, faites du kayak et explorez la beauté des collines environnantes.",
+    "activities": ["Kayak", "Balades en bateau", "Natation"]
+  },
+  "genocideMemorials": {
+    "name": "Mémoriaux du Génocide",
+    "description": "Sites commémorant l'histoire et la résilience du Rwanda.",
+    "longDescription": "Visitez les mémoriaux du génocide pour découvrir l’histoire du Rwanda et honorer la résilience de son peuple.",
+    "activities": ["Visites guidées", "Expositions éducatives"]
+  },
+  "nyungweForest": {
+    "name": "Forêt de Nyungwe",
+    "description": "Une forêt tropicale préservée avec une faune variée et des passerelles suspendues.",
+    "longDescription": "Découvrez la biodiversité de la forêt de Nyungwe, connue pour ses chimpanzés, ses oiseaux et sa passerelle emblématique.",
+    "activities": ["Randonnée avec les chimpanzés", "Passerelle dans la canopée", "Observation des oiseaux"]
+  },
+  "akageraPark": {
+    "name": "Parc National de l'Akagera",
+    "description": "Un parc de savane avec une faune diversifiée et des paysages magnifiques.",
+    "longDescription": "Découvrez la beauté du Parc National de l'Akagera, abritant les Big Five et des paysages de savane à couper le souffle.",
+    "activities": ["Safaris", "Excursions en bateau", "Observation des oiseaux"]
+  },
+  "kigaliCity": {
+    "name": "Ville de Kigali",
+    "description": "La capitale dynamique du Rwanda, riche en culture et en histoire.",
+    "longDescription": "Explorez la ville de Kigali, connue pour sa propreté, ses sites culturels et ses marchés animés.",
+    "activities": ["Visites de la ville", "Visites de musées", "Marchés locaux"]
+  }
+},
+  "culturalExperiences": {
+    "hero": {
+      "title": "Expériences Culturelles",
+      "subtitle": "Immergez-vous dans le riche patrimoine culturel du Rwanda"
+    },
+    "intro": {
+      "title": "Découvrez la Culture Rwandaise",
+      "content1": "Le patrimoine culturel du Rwanda est aussi diversifié et beau que ses paysages. De la danse et la musique traditionnelles à l'artisanat, la cuisine et les expériences communautaires, il existe d'innombrables façons de s'immerger dans la culture rwandaise.",
+      "content2": "Nos expériences culturelles sont conçues pour offrir des interactions authentiques avec les communautés locales, soutenant les pratiques traditionnelles tout en offrant aux visiteurs des aperçus significatifs de la vie et des traditions rwandaises."
+    },
+    "bookExperience": "Réserver Cette Expérience",
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "subtitle": "Écoutez les voyageurs qui ont découvert la culture rwandaise avec nous"
+    },
+    "cta": {
+      "title": "Prêt à Découvrir la Culture Rwandaise?",
+      "subtitle": "Réservez une expérience culturelle ou incluez des activités culturelles dans votre circuit personnalisé",
+      "viewTours": "Voir Nos Circuits",
+      "contactUs": "Contactez-Nous"
+    },
+    "heroTitle": "Découvrez le patrimoine culturel du Rwanda",
+    "heroSubtitle": "Imprégnez-vous des riches traditions, de l'art et de la cuisine du Rwanda à travers des expériences inoubliables.",
+    "introTitle": "Explorez les trésors culturels du Rwanda",
+    "introText1": "Le Rwanda est une terre de traditions vibrantes, où chaque danse, artisanat et plat raconte une histoire de résilience et d'unité.",
+    "introText2": "Rejoignez-nous pour un voyage au cœur du Rwanda à travers ses expériences culturelles, en vous connectant à son peuple et à son patrimoine.",
+    "testimonial1": "La performance de danse traditionnelle était à couper le souffle ! Je me suis senti tellement connecté à l'histoire et à l'esprit du Rwanda.",
+    "testimonial2": "Apprendre à tisser des paniers avec des artisans locaux a été une expérience tellement enrichissante. Je chérirai ces souvenirs pour toujours.",
+    "testimonial3": "Partager un repas avec une famille rwandaise a été le moment fort de mon voyage. Leur chaleur et leur hospitalité étaient inoubliables.",
+    "ctaTitle": "Prêt à découvrir la culture du Rwanda ?",
+    "ctaSubtitle": "Réservez votre aventure culturelle dès aujourd'hui et créez des souvenirs qui dureront toute une vie."
+  },
+  "tours": {
+    "hero": {
+      "title": "Circuits & Forfaits",
+      "subtitle": "Découvrez nos circuits soigneusement élaborés pour vivre le meilleur du Rwanda"
+    },
+    "featuredTours": {
+      "title": "Nos Circuits Vedettes",
+      "subtitle": "Explorez nos forfaits les plus populaires, conçus pour mettre en valeur le meilleur de la beauté naturelle, de la faune et de la culture du Rwanda",
+      "nyungweForest": {
+        "price": "200 $ par personne"
+      },
+      "rwandaHighlights": {
+        "title": "Points Forts du Rwanda",
+        "description": "Découvrez le meilleur du Rwanda dans ce circuit complet.",
+        "duration": "7 jours",
+        "price": "1500 $ par personne"
+      },
+      "gorillaTrekking": {
+        "title": "Trekking des Gorilles",
+        "description": "Vivez l'excitation de randonner dans les forêts luxuriantes du Rwanda pour voir les gorilles de montagne dans leur habitat naturel.",
+        "duration": "3 jours",
+        "price": "1500 $"
+      },
+      "lakeKivu": {
+        "title": "Aventure au Lac Kivu",
+        "description": "Détendez-vous au bord des eaux sereines du Lac Kivu et profitez d'activités comme le kayak et les balades en bateau.",
+        "duration": "2 jours",
+        "price": "800 $"
+      },
+      "culturalHeritage": {
+        "title": "Tour du Patrimoine Culturel",
+        "description": "Découvrez le riche patrimoine culturel du Rwanda à travers des visites de musées, de villages traditionnels et de centres culturels.",
+        "duration": "1 jour",
+        "price": "200 $"
+      },
+      "kigaliCity": {
+        "title": "Tour de la Ville de Kigali",
+        "description": "Explorez la culture vibrante, l'histoire et les attractions modernes de Kigali.",
+        "duration": "Demi-journée",
+        "price": "100 $"
+      },
+      "nyungweForest": {
+        "title": "Aventure dans la Forêt de Nyungwe",
+        "description": "Randonnez dans la Forêt de Nyungwe et vivez son impressionnante promenade en canopée.",
+        "duration": "2 jours",
+        "price": "600 $"
+      }
+    },
+    "customTours": {
+      "title": "Circuits Personnalisés",
+      "subtitle": "Nous nous spécialisons dans la création d'itinéraires personnalisés adaptés à vos intérêts, votre calendrier et votre budget",
+      "inquire": "Renseignez-Vous Maintenant",
+      "family": {
+        "title": "Aventures en Famille",
+        "description": "Circuits adaptés pour les familles explorant le Rwanda ensemble."
+      },
+      "honeymoon": {
+        "title": "Forfaits Lune de Miel",
+        "description": "Escapades romantiques pour les jeunes mariés au Rwanda."
+      },
+      "photography": {
+        "title": "Circuits Photographie",
+        "description": "Capturez la beauté du Rwanda avec des circuits guidés."
+      },
+      "birdwatching": {
+        "title": "Circuits d'Observation des Oiseaux",
+        "description": "Découvrez les espèces d'oiseaux diversifiées du Rwanda avec des guides experts."
+      },
+      "inquireNow": "Renseignez-vous Maintenant",
+      "designYourOwn": {
+        "title": "Concevez Votre Propre Circuit",
+        "description": "Créez un itinéraire personnalisé basé sur vos préférences.",
+        "cta": "Commencez à Planifier"
+      }
+    },
+    "designYourOwn": {
+      "title": "Concevez Votre Propre Circuit",
+      "subtitle": "Vous ne trouvez pas exactement ce que vous cherchez? Laissez-nous créer un itinéraire personnalisé basé sur vos préférences et intérêts",
+      "cta": "Commencez à Planifier Votre Circuit Personnalisé"
+    },
+    "included": {
+      "title": "Ce Qui Est Inclus",
+      "items": [
+        "Guides professionnels anglophones",
+        "Transport confortable en véhicules 4x4",
+        "Hébergement comme spécifié dans l'itinéraire",
+        "Repas comme spécifiés dans l'itinéraire",
+        "Tous les frais d'entrée aux parcs et activités mentionnées",
+        "Eau en bouteille pendant les circuits"
+      ]
+    },
+    "notIncluded": {
+      "title": "Ce Qui N'Est Pas Inclus",
+      "items": [
+        "Vols internationaux",
+        "Frais de visa (si applicable)",
+        "Assurance voyage (obligatoire)",
+        "Dépenses personnelles (souvenirs, boissons, etc.)",
+        "Pourboires pour les guides et le personnel",
+        "Activités non mentionnées dans l'itinéraire"
+      ]
+    },
+    "cta": {
+      "title": "Prêt à Réserver Votre Aventure au Rwanda?",
+      "subtitle": "Contactez-nous aujourd'hui pour réserver votre place ou vous renseigner sur les options de circuits personnalisés",
+      "bookNow": "Réserver Maintenant",
+      "requestCustom": "Demander un Circuit Personnalisé"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Galerie",
+      "subtitle": "Explorez le Rwanda à travers notre collection d'images magnifiques"
+    },
+    "categories": {
+      "all": "Tout",
+      "wildlife": "Faune",
+      "landscapes": "Paysages",
+      "culture": "Culture",
+      "activities": "Activités"
+    },
+    "noImages": "Aucune image trouvée dans cette catégorie.",
+    "cta": {
+      "title": "Découvrez le Rwanda en Personne",
+      "subtitle": "Les photos ne peuvent capturer qu'une fraction de la beauté du Rwanda. Rejoignez-nous pour un voyage inoubliable",
+      "browseTours": "Parcourir les Circuits",
+      "contactUs": "Contactez-Nous"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contactez-Nous",
+      "subtitle": "Prenez contact pour planifier votre aventure au Rwanda"
+    },
+    "getInTouch": {
+      "title": "Prenez Contact",
+      "content": "Vous avez des questions sur nos circuits ou besoin d'aide pour planifier votre voyage au Rwanda? Notre équipe est là pour vous aider. Remplissez le formulaire ou contactez-nous directement en utilisant les informations ci-dessous."
+    },
+    "info": {
+      "location": {
+        "title": "Notre Emplacement",
+        "value": "Kigali, Rwanda"
+      },
+      "phone": {
+        "title": "Numéro de Téléphone",
+        "value": "+250 780 258 219"
+      },
+      "email": {
+        "title": "Adresse Email",
+        "value": "info@ngwinourebe.rw"
+      },
+      "hours": {
+        "title": "Heures d'Ouverture",
+        "weekdays": "Lundi - Vendredi: 8h00 - 18h00",
+        "saturday": "Samedi: 9h00 - 16h00",
+        "sunday": "Dimanche: Fermé"
+      }
+    },
+    "followUs": "Suivez-Nous",
+    "form": {
+      "title": "Prenez Contact",
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "tourInterest": "Intérêt de Circuit",
+      "selectTour": "Sélectionnez un circuit",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message",
+      "success": "Merci pour votre message! Nous vous répondrons bientôt."
+    },
+    "location": {
+      "title": "Notre Emplacement",
+      "subtitle": "Visitez notre bureau à Kigali, Rwanda"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Trouvez des réponses aux questions courantes sur les voyages au Rwanda",
+      "questions": {
+        "bestTime": {
+          "question": "Quelle est la meilleure période pour visiter le Rwanda?",
+          "answer": "Le Rwanda peut être visité toute l'année. Les saisons sèches (juin à septembre et décembre à février) sont idéales pour le trekking des gorilles et l'observation de la faune. Les saisons des pluies offrent des paysages luxuriants et sont moins fréquentées."
+        },
+        "visa": {
+          "question": "Ai-je besoin d'un visa pour visiter le Rwanda?",
+          "answer": "La plupart des visiteurs peuvent obtenir un visa à l'arrivée ou faire une demande en ligne via le site web de l'Immigration rwandaise. Les citoyens de certains pays sont exemptés des exigences de visa. Nous recommandons de vérifier les dernières informations sur les visas avant votre voyage."
+        },
+        "gorillaTrekking": {
+          "question": "Combien coûte le trekking des gorilles?",
+          "answer": "Les permis de trekking des gorilles coûtent 1 500 $ par personne pour les non-résidents étrangers. Cela comprend les frais d'entrée au parc et un trek guidé. Nous nous occupons de tous les arrangements de permis pour nos clients."
+        },
+        "safety": {
+          "question": "Le Rwanda est-il sûr pour les touristes?",
+          "answer": "Le Rwanda est considéré comme l'un des pays les plus sûrs d'Afrique. Il a de faibles taux de criminalité, une gouvernance stable et une excellente infrastructure. Comme pour toute destination, des précautions de voyage normales doivent être observées."
+        },
+        "languages": {
+          "question": "Quelles langues sont parlées au Rwanda?",
+          "answer": "Les langues officielles sont le kinyarwanda, l'anglais, le français et le swahili. L'anglais est largement parlé dans les zones touristiques, et nos guides parlent couramment l'anglais."
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Commencer à Planifier Votre Voyage?",
+      "subtitle": "Contactez-nous aujourd'hui et laissez notre équipe d'experts vous aider à créer l'itinéraire parfait au Rwanda",
+      "callUs": "Appelez-Nous Maintenant"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Notre Blog",
+      "subtitle": "Aperçus, conseils et histoires du Rwanda"
+    },
+    "readMore": "Lire Plus →",
+    "search": {
+      "title": "Recherche",
+      "placeholder": "Rechercher dans le blog..."
+    },
+    "categories": {
+      "title": "Catégories"
+    },
+    "recentPosts": {
+      "title": "Articles Récents"
+    },
+    "subscribe": {
+      "title": "Abonnez-vous à Notre Newsletter",
+      "subtitle": "Recevez les dernières mises à jour, conseils et offres spéciales directement dans votre boîte de réception",
+      "placeholder": "Votre adresse email",
+      "button": "S'abonner"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "cta": {
+      "title": "Prêt à Découvrir le Rwanda?",
+      "subtitle": "Transformez ces histoires en vos propres aventures. Réservez un circuit avec nous aujourd'hui",
+      "viewTours": "Voir Nos Circuits",
+      "contactUs": "Contactez-Nous"
+    }
+  },
+  "footer": {
+    "companyInfo": "Découvrez la beauté du Rwanda, le Pays des Mille Collines, avec nos guides experts et nos expériences inoubliables.",
+    "quickLinks": "Liens Rapides",
+    "popularDestinations": "Destinations Populaires",
+    "contactUs": "Contactez-Nous",
+    "copyright": "© {year} DECIFO TOURISM. Tous droits réservés."
+  },
+  "errors": {
+    "required": "Ce champ est obligatoire",
+    "invalidEmail": "Veuillez entrer une adresse email valide",
+    "invalidPhone": "Veuillez entrer un numéro de téléphone valide",
+    "minLength": "Ce champ doit comporter au moins {length} caractères",
+    "maxLength": "Ce champ doit comporter moins de {length} caractères",
+    "serverError": "Une erreur s'est produite. Veuillez réessayer plus tard."
+  },
+  "errorBoundary": {
+    "title": "Quelque chose s'est mal passé",
+    "message": "Nous sommes désolés, une erreur s'est produite lors du rendu de cette page.",
+    "reload": "Recharger la page"
+  }
+  
+}
+

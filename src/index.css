@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0cec3c; /* Changed from green to green */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #11cf30; /* Changed from green to darker green */
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 520ms cubic-bezier(.2,.9,.2,1), transform 520ms cubic-bezier(.2,.9,.2,1);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skeleton helpers */
+.skeleton-rounded { border-radius: 0.5rem }
+.skeleton-circle { border-radius: 9999px }
+
+/* Global dark-mode overrides for common Tailwind utilities
+   These provide a broad visual inversion when `html` has the
+   `dark` class, so the ThemeToggle affects more of the UI without
+   changing every component to explicitly use `dark:` variants. */
+html.dark {
+  --page-bg: #0b1220;
+  --surface: #0f1724;
+  --muted-text: #9ca3af;
+  --text: #e6eef8;
+}
+
+/* apply base bg/text */
+html.dark body {
+  background-color: var(--page-bg);
+  color: var(--text);
+}
+
+/* common utility overrides */
+html.dark .bg-white { background-color: var(--surface) !important }
+html.dark .bg-gray-50 { background-color: #081124 !important }
+html.dark .bg-gray-100 { background-color: #0b1220 !important }
+html.dark .bg-gray-200 { background-color: #1f2937 !important }
+html.dark .bg-gray-700 { background-color: #374151 !important }
+
+html.dark .text-gray-900 { color: var(--text) !important }
+html.dark .text-gray-800 { color: var(--text) !important }
+html.dark .text-gray-700 { color: #d1d5db !important }
+html.dark .text-gray-600 { color: var(--muted-text) !important }
+
+/* hover/active variants commonly used */
+html.dark .hover\:bg-gray-100:hover { background-color: #111827 !important }
+html.dark .dark\:hover\:bg-gray-700:hover { background-color: #374151 !important }
+
+/* editors/card shadows: slightly brighten in dark */
+html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg {
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6) !important;
+}
+
+
+
