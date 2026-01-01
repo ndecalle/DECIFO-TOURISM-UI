@@ -41,4 +41,14 @@ const slice = createSlice({ name: 'contacts', initialState: { items: [], status:
 }
 })
 
+// Selectors
+
+export const selectContacts = (state) => state.contacts.items
+
+export const selectContactsStatus = (state) => state.contacts.status
+
+export const selectContactsError = (state) => state.contacts.error
+
+export const selectContactById = (state, id) => state.contacts.items.find(contact => contact._id === id)
+
 export default slice.reducer

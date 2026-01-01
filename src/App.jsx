@@ -1,7 +1,5 @@
-import { Routes, Route } from "react-router-dom"
-import { useEffect } from "react"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import { Routes, Route, useLocation } from "react-router-dom"
+
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Destinations from "./pages/Destinations"
@@ -11,26 +9,17 @@ import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
 import AdminLogin from "./pages/admin/AdminLogin"
 import AdminDashboard from "./pages/admin/AdminDashboard"
-import PrivateRoute from './components/PrivateRoute'
-import AdminRoute from './components/AdminRoute'
+
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
+import ScrollToTopButton from "./components/ui/ScrollToTopButton"
+import PrivateRoute from './components/auth/PrivateRoute'
+import AdminRoute from './components/auth/AdminRoute'
+import AnalyticsTracker from "./components/AnalyticsTracker"
 
 import ScrollToTop from "./utils/scrollToTop"
-import ScrollToTopButton from "./components/ScrollToTopButton"
-import { trackPageView } from "./services/analytics"
-import { useLocation } from "react-router-dom"
 import { ThemeProvider } from "./context/ThemeContext"
 import { LanguageProvider } from "./context/LanguageContext"
-
-// Analytics tracker component
-function AnalyticsTracker() {
-  const location = useLocation()
-
-  useEffect(() => {
-    trackPageView(location.pathname, document.title)
-  }, [location])
-
-  return null
-}
 
 function App() {
   const location = useLocation()

@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-export const login = createAsyncThunk('auth/login', async ({ email, password, baseUrl }) => {
+const baseUrl = import.meta.env.VITE_API_BASE_URL
+
+export const login = createAsyncThunk('auth/login', async ({ email, password }) => {
   const res = await fetch(baseUrl + '/api/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -50,4 +52,52 @@ const slice = createSlice({
 })
 
 export const { logout, setUser } = slice.actions
+
+// Selectors
+export const selectToken = (state) => state.auth.token
+export const selectUser = (state) => state.auth.user
+export const selectAuthStatus = (state) => state.auth.status
+export const selectAuthError = (state) => state.auth.error
+export const selectIsAuthenticated = (state) => !!state.auth.token
+// Selectors
+
+export const selectTours = (state) => state.tours.items
+
+export const selectToursStatus = (state) => state.tours.status
+
+export const selectToursError = (state) => state.tours.error
+
+export const selectTourById = (state, id) => state.tours.items.find(tour => tour._id === id)
+// Selectors
+
+export const selectDestinations = (state) => state.destinations.items
+
+export const selectDestinationsStatus = (state) => state.destinations.status
+
+export const selectDestinationsError = (state) => state.destinations.error
+
+export const selectDestinationById = (state, id) => state.destinations.items.find(destination => destination._id === id)
+// Selectors
+
+export const selectTestimonials = (state) => state.testimonials.items
+
+export const selectTestimonialsStatus = (state) => state.testimonials.status
+
+export const selectTestimonialsError = (state) => state.testimonials.error
+
+export const selectTestimonialById = (state, id) => state.testimonials.items.find(testimonial => testimonial._id === id)
+// Selectors
+
+export const selectContacts = (state) => state.contacts.items
+
+export const selectContactsStatus = (state) => state.contacts.status
+
+export const selectContactsError = (state) => state.contacts.error
+
+export const selectContactById = (state, id) => state.contacts.items.find(contact => contact._id === id)
+
 export default slice.reducer
+
+
+
+

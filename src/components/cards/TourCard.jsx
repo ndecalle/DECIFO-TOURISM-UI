@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import BookingForm from "./BookingForm"
-import ImageWithSkeleton from "./ImageWithSkeleton"
+
+import BookingForm from "../forms/BookingForm"
+import ImageWithSkeleton from "../ui/ImageWithSkeleton"
 
 const TourCard = ({ _id, title, description, duration, price, image, link, slug }) => {
   const [open, setOpen] = useState(false)
