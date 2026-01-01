@@ -24,18 +24,34 @@ const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) =
   }, [tour, reset])
 
   const onSubmit = async (data) => {
-    const payload = { ...data }
-    if (image) payload.image = typeof image === 'string' ? image : (image.url || image.secure_url || image)
-    if (tour && tour._id) {
-      await dispatch(updateTour({ id: tour._id, tour: payload }))
+    // If `image` is a File (selected but not uploaded), send multipart/form-data
+    if (image && image instanceof File) {
+      const form = new FormData()
+      form.append('file', image)
+      Object.keys(data).forEach(k => { if (data[k] != null) form.append(k, data[k]) })
+      if (tour && tour._id) {
+        await dispatch(updateTour({ id: tour._id, tour: form }))
+      } else {
+        await dispatch(createTour(form))
+      }
     } else {
-      await dispatch(createTour(payload))
+      const payload = { ...data }
+      if (image) payload.image = typeof image === 'string' ? image : (image.url || image.secure_url || image)
+      if (tour && tour._id) {
+        await dispatch(updateTour({ id: tour._id, tour: payload }))
+      } else {
+        await dispatch(createTour(payload))
+      }
     }
     onSaved()
   }
 
   const handleUploaded = (data) => {
     setImage(data.url || data.secure_url || data.url)
+  }
+
+  const handleFileSelect = (file) => {
+    setImage(file)
   }
 
   return (
@@ -65,7 +81,7 @@ const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) =
       </div>
       <div className="mb-2">
         <label className="block text-sm">Image</label>
-        <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={handleUploaded} />
+        <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={handleUploaded} onFileSelect={handleFileSelect} />
         {image && <div className="mt-2">Uploaded: <img src={typeof image === 'string' ? image : (image.url || image.secure_url)} alt="tour" className="h-20 object-cover" /></div>}
       </div>
       <div className="flex gap-2">

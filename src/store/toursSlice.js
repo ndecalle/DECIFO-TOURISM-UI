@@ -16,7 +16,10 @@ export const fetchTours = createAsyncThunk('tours/fetch', async (_, { rejectWith
 export const createTour = createAsyncThunk('tours/create', async (tour, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/tours', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(tour) })
+    const isForm = typeof FormData !== 'undefined' && tour instanceof FormData
+    const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
+    const body = isForm ? tour : JSON.stringify(tour)
+    const res = await fetch(baseUrl + '/api/tours', { method: 'POST', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -28,7 +31,10 @@ export const createTour = createAsyncThunk('tours/create', async (tour, { reject
 export const updateTour = createAsyncThunk('tours/update', async ({ id, tour }, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/tours/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(tour) })
+    const isForm = typeof FormData !== 'undefined' && tour instanceof FormData
+    const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
+    const body = isForm ? tour : JSON.stringify(tour)
+    const res = await fetch(baseUrl + '/api/tours/' + id, { method: 'PUT', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data

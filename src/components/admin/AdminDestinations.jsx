@@ -17,6 +17,15 @@ const AdminDestinations = () => {
   }
 
   const save = async (payload) => {
+    // support FormData passed from the form
+    if (payload && payload.formData) {
+      const form = payload.formData
+      if (payload._id) await dispatch(updateDestination({ id: payload._id, item: form }))
+      else await dispatch(createDestination(form))
+      setEditing(null)
+      return
+    }
+
     const p = { ...payload }
     if (p.image && typeof p.image === 'object') p.image = p.image.url || p.image
     if (payload._id) await dispatch(updateDestination({ id: payload._id, item: p }))
@@ -61,6 +70,14 @@ const DestinationForm = ({ item = {}, onSave, onCancel }) => {
   }, [item, reset])
 
   const submit = (data) => {
+    // If image is a File, send it as FormData through onSave
+    if (image && image instanceof File) {
+      const form = new FormData()
+      form.append('file', image)
+      Object.keys(data).forEach(k => { if (data[k] != null) form.append(k, data[k]) })
+      onSave({ formData: form, _id: item._id })
+      return
+    }
     const payload = { ...data }
     if (image) payload.image = typeof image === 'string' ? image : (image.url || image.secure_url || image)
     onSave({ ...payload, _id: item._id })
@@ -89,7 +106,7 @@ const DestinationForm = ({ item = {}, onSave, onCancel }) => {
       </div>
       <div className="mb-2">
         <label className="block text-sm">Image</label>
-        <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={(data) => setImage(data.url || data.secure_url || data.url)} />
+        <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={(data) => setImage(data.url || data.secure_url || data.url)} onFileSelect={(f) => setImage(f)} />
         {image && <div className="mt-2">Uploaded: <img src={typeof image === 'string' ? image : (image.url || image.secure_url)} alt="destination" className="h-20 object-cover" /></div>}
       </div>
       <div className="flex gap-2">

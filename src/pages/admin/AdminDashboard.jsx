@@ -8,6 +8,7 @@ import AdminBookings from '../../components/admin/AdminBookings'
 
 const AdminDashboard = () => {
   const [user, setUser] = useState(null)
+  const [activeTab, setActiveTab] = useState('tours')
 
   useEffect(() => {
     const token = localStorage.getItem('token')
@@ -20,13 +21,48 @@ const AdminDashboard = () => {
     })()
   }, [])
 
+  const menuItems = [
+    { key: 'tours', label: 'Tours', component: AdminTourList },
+    { key: 'bookings', label: 'Bookings', component: AdminBookings },
+    { key: 'contacts', label: 'Contacts', component: AdminContacts },
+    { key: 'testimonials', label: 'Testimonials', component: AdminTestimonials },
+    { key: 'destinations', label: 'Destinations', component: AdminDestinations },
+    { key: 'images', label: 'Images', component: AdminImageUpload },
+  ]
+
+  const ActiveComponent = menuItems.find(item => item.key === activeTab)?.component || AdminTourList
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-        <div>
+    <div className="flex h-screen bg-gray-100">
+      {/* Sidebar */}
+      <div className="w-64 bg-white shadow-md flex flex-col">
+        <div className="p-4 border-b">
+          <h2 className="text-xl font-bold text-green-700">Admin Panel</h2>
+        </div>
+        <nav className="flex-1 p-4">
+          <ul>
+            {menuItems.map(item => (
+              <li key={item.key} className="mb-2">
+                <button
+                  onClick={() => setActiveTab(item.key)}
+                  className={`w-full text-left p-2 rounded hover:bg-gray-100 transition ${activeTab === item.key ? 'bg-green-100 text-green-700 font-semibold' : 'text-gray-700'}`}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        {/* Profile and Logout */}
+        <div className="p-4 border-t bg-gray-50">
+          {user && (
+            <div className="mb-4">
+              <div className="font-bold text-gray-800">{user.name}</div>
+              <div className="text-sm text-gray-600">{user.email}</div>
+            </div>
+          )}
           <button
-            className="bg-red-600 text-white px-3 py-1 rounded"
+            className="w-full bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded transition"
             onClick={() => { localStorage.removeItem('token'); window.location.href = '/admin/login' }}
           >
             Logout
@@ -34,17 +70,16 @@ const AdminDashboard = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
-          <AdminTourList />
-          <AdminContacts />
-          <AdminTestimonials />
-        </div>
-        <div className="space-y-6">
-          <AdminImageUpload />
-          <AdminDestinations />
-          <AdminBookings />
-        </div>
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col">
+        <header className="bg-white shadow p-4">
+          <h1 className="text-2xl font-bold text-gray-800">
+            {menuItems.find(item => item.key === activeTab)?.label}
+          </h1>
+        </header>
+        <main className="flex-1 p-6 overflow-auto">
+          <ActiveComponent />
+        </main>
       </div>
     </div>
   )

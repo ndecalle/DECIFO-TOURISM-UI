@@ -14,7 +14,10 @@ export const fetchDestinations = createAsyncThunk('destinations/fetch', async (_
 export const createDestination = createAsyncThunk('destinations/create', async (item, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/destinations', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(item) })
+    const isForm = typeof FormData !== 'undefined' && item instanceof FormData
+    const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
+    const body = isForm ? item : JSON.stringify(item)
+    const res = await fetch(baseUrl + '/api/destinations', { method: 'POST', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -24,7 +27,10 @@ export const createDestination = createAsyncThunk('destinations/create', async (
 export const updateDestination = createAsyncThunk('destinations/update', async ({ id, item }, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/destinations/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(item) })
+    const isForm = typeof FormData !== 'undefined' && item instanceof FormData
+    const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
+    const body = isForm ? item : JSON.stringify(item)
+    const res = await fetch(baseUrl + '/api/destinations/' + id, { method: 'PUT', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const AdminImageUpload = ({ onUploaded = () => {}, initial = null }) => {
+const AdminImageUpload = ({ onUploaded = () => {}, initial = null, onFileSelect = () => {} }) => {
   const [file, setFile] = useState(null)
   const [msg, setMsg] = useState('')
   const [loading, setLoading] = useState(false)
@@ -30,7 +30,7 @@ const AdminImageUpload = ({ onUploaded = () => {}, initial = null }) => {
     <div className="bg-white p-4 rounded shadow">
       <h3 className="font-bold mb-3">Upload Image</h3>
       <form onSubmit={upload}>
-        <input type="file" accept="image/*" onChange={(e) => setFile(e.target.files[0])} className="mb-3" />
+        <input type="file" accept="image/*" onChange={(e) => { const f = e.target.files[0]; setFile(f); onFileSelect(f); }} className="mb-3" />
         <div className="flex gap-2">
           <button className="bg-green-600 text-white px-3 py-1 rounded" disabled={loading}>{loading ? 'Uploading...' : 'Upload'}</button>
         </div>
