@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../store/authSlice'
+import { API_BASE } from '../../services/config'
 
 const AdminLogin = () => {
   const [email, setEmail] = useState('')
@@ -15,7 +16,7 @@ const AdminLogin = () => {
   const submit = async (e) => {
     e.preventDefault()
     try {
-      await dispatch(login({ email, password, baseUrl: import.meta.env.VITE_API_BASE_URL })).unwrap()
+      await dispatch(login({ email, password, baseUrl: API_BASE })).unwrap()
       navigate('/admin')
     } catch (err) {
       setError(err.message)

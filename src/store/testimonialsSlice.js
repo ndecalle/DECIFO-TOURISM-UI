@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchTestimonials = createAsyncThunk('testimonials/fetch', async (_, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/testimonials')
+    const res = await fetch(API_BASE + '/api/testimonials')
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -13,7 +12,7 @@ export const fetchTestimonials = createAsyncThunk('testimonials/fetch', async (_
 
 export const createTestimonial = createAsyncThunk('testimonials/create', async (item, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/testimonials', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(item) })
+    const res = await fetch(API_BASE + '/api/testimonials', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(item) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -23,7 +22,7 @@ export const createTestimonial = createAsyncThunk('testimonials/create', async (
 export const approveTestimonial = createAsyncThunk('testimonials/approve', async ({ id }, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/testimonials/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify({ approved: true }) })
+    const res = await fetch(API_BASE + '/api/testimonials/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify({ approved: true }) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -33,7 +32,7 @@ export const approveTestimonial = createAsyncThunk('testimonials/approve', async
 export const deleteTestimonial = createAsyncThunk('testimonials/delete', async (id, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/testimonials/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
+    const res = await fetch(API_BASE + '/api/testimonials/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return id

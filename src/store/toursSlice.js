@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchTours = createAsyncThunk('tours/fetch', async (_, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/tours')
+    const res = await fetch(API_BASE + '/api/tours')
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -19,7 +18,7 @@ export const createTour = createAsyncThunk('tours/create', async (tour, { reject
     const isForm = typeof FormData !== 'undefined' && tour instanceof FormData
     const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
     const body = isForm ? tour : JSON.stringify(tour)
-    const res = await fetch(baseUrl + '/api/tours', { method: 'POST', headers, body })
+    const res = await fetch(API_BASE + '/api/tours', { method: 'POST', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -34,7 +33,7 @@ export const updateTour = createAsyncThunk('tours/update', async ({ id, tour }, 
     const isForm = typeof FormData !== 'undefined' && tour instanceof FormData
     const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
     const body = isForm ? tour : JSON.stringify(tour)
-    const res = await fetch(baseUrl + '/api/tours/' + id, { method: 'PUT', headers, body })
+    const res = await fetch(API_BASE + '/api/tours/' + id, { method: 'PUT', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -46,7 +45,7 @@ export const updateTour = createAsyncThunk('tours/update', async ({ id, tour }, 
 export const deleteTour = createAsyncThunk('tours/delete', async (id, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/tours/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
+    const res = await fetch(API_BASE + '/api/tours/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return id

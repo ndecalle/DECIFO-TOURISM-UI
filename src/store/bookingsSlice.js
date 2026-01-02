@@ -1,11 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchBookings = createAsyncThunk('bookings/fetch', async (_, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/bookings', { headers: { Authorization: `Bearer ${token}` } })
+    const res = await fetch(API_BASE + '/api/bookings', { headers: { Authorization: `Bearer ${token}` } })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -15,7 +14,7 @@ export const fetchBookings = createAsyncThunk('bookings/fetch', async (_, { reje
 export const updateBooking = createAsyncThunk('bookings/update', async ({ id, payload }, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/bookings/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(payload) })
+    const res = await fetch(API_BASE + '/api/bookings/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(payload) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -24,7 +23,7 @@ export const updateBooking = createAsyncThunk('bookings/update', async ({ id, pa
 
 export const createBooking = createAsyncThunk('bookings/create', async (payload, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/bookings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+    const res = await fetch(API_BASE + '/api/bookings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data

@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchDestinations = createAsyncThunk('destinations/fetch', async (_, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/destinations')
+    const res = await fetch(API_BASE + '/api/destinations')
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -17,7 +16,7 @@ export const createDestination = createAsyncThunk('destinations/create', async (
     const isForm = typeof FormData !== 'undefined' && item instanceof FormData
     const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
     const body = isForm ? item : JSON.stringify(item)
-    const res = await fetch(baseUrl + '/api/destinations', { method: 'POST', headers, body })
+    const res = await fetch(API_BASE + '/api/destinations', { method: 'POST', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -30,7 +29,7 @@ export const updateDestination = createAsyncThunk('destinations/update', async (
     const isForm = typeof FormData !== 'undefined' && item instanceof FormData
     const headers = isForm ? { Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
     const body = isForm ? item : JSON.stringify(item)
-    const res = await fetch(baseUrl + '/api/destinations/' + id, { method: 'PUT', headers, body })
+    const res = await fetch(API_BASE + '/api/destinations/' + id, { method: 'PUT', headers, body })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -40,7 +39,7 @@ export const updateDestination = createAsyncThunk('destinations/update', async (
 export const deleteDestination = createAsyncThunk('destinations/delete', async (id, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/destinations/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
+    const res = await fetch(API_BASE + '/api/destinations/' + id, { method: 'DELETE', headers: { Authorization: `Bearer ${token}` } })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return id

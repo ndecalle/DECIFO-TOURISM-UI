@@ -1,11 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchContacts = createAsyncThunk('contacts/fetch', async (_, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/contacts', { headers: { Authorization: `Bearer ${token}` } })
+    const res = await fetch(API_BASE + '/api/contacts', { headers: { Authorization: `Bearer ${token}` } })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -15,7 +14,7 @@ export const fetchContacts = createAsyncThunk('contacts/fetch', async (_, { reje
 export const sendReply = createAsyncThunk('contacts/reply', async ({ id, payload }, { rejectWithValue }) => {
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch(baseUrl + '/api/admin/reply/' + id, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(payload) })
+    const res = await fetch(API_BASE + '/api/admin/reply/' + id, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(payload) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data
@@ -24,7 +23,7 @@ export const sendReply = createAsyncThunk('contacts/reply', async ({ id, payload
 
 export const createContact = createAsyncThunk('contacts/create', async (payload, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/contacts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+    const res = await fetch(API_BASE + '/api/contacts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data

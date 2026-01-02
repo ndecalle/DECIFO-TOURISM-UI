@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { API_BASE } from '../../services/config'
 import AdminTourList from '../../components/admin/AdminTourList'
 import AdminImageUpload from '../../components/admin/AdminImageUpload'
 import AdminContacts from '../../components/admin/AdminContacts'
@@ -14,7 +15,7 @@ const AdminDashboard = () => {
     const token = localStorage.getItem('token')
     if (!token) return
     ;(async () => {
-      const res = await fetch(import.meta.env.VITE_API_BASE_URL + '/api/auth/me', {
+      const res = await fetch(API_BASE + '/api/auth/me', {
         headers: { Authorization: `Bearer ${token}` }
       })
       if (res.ok) setUser(await res.json())

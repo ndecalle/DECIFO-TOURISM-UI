@@ -1,13 +1,26 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { API_BASE } from '../services/config'
+import { create } from 'node:domain'
 
 export const login = createAsyncThunk('auth/login', async ({ email, password, baseUrl }) => {
-  const res = await fetch(baseUrl + '/api/auth/login', {
+  const res = await fetch(API_BASE + '/api/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password })
   })
   const data = await res.json()
   if (!res.ok) throw new Error(data.message || 'Login failed')
+  return data
+})
+
+const Register = createAsyncThunk('auth/register', async ({ name, email, password }) => {
+  const res = await fetch(API_BASE + '/api/auth/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, password })
+  })
+  const data = await res.json()
+  if (!res.ok) throw new Error(data.message || 'Registration failed')
   return data
 })
 

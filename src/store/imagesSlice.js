@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL
+import { API_BASE } from '../services/config'
 
 export const fetchImages = createAsyncThunk('images/fetch', async (_, { rejectWithValue }) => {
   try {
-    const res = await fetch(baseUrl + '/api/uploads')
+    const res = await fetch(API_BASE + '/api/uploads')
     const data = await res.json()
     if (!res.ok) return rejectWithValue(data)
     return data

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { API_BASE } from '../../services/config'
 
 const AdminImageUpload = ({ onUploaded = () => {}, initial = null, onFileSelect = () => {} }) => {
   const [file, setFile] = useState(null)
@@ -13,7 +14,7 @@ const AdminImageUpload = ({ onUploaded = () => {}, initial = null, onFileSelect 
     form.append('file', file)
     const token = localStorage.getItem('token')
     try {
-      const res = await fetch(import.meta.env.VITE_API_BASE_URL + '/api/uploads', { method: 'POST', headers: { Authorization: `Bearer ${token}` }, body: form })
+      const res = await fetch(API_BASE + '/api/uploads', { method: 'POST', headers: { Authorization: `Bearer ${token}` }, body: form })
       const data = await res.json()
       if (res.ok) {
         setMsg('Uploaded')

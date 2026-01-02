@@ -2,7 +2,8 @@
  * Base API service for making HTTP requests
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://api.example.com"
+import { API_BASE } from './config'
+const API_BASE_URL = API_BASE || 'https://api.example.com'
 
 /**
  * Generic fetch wrapper with error handling
