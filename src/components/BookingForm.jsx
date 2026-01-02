@@ -34,37 +34,37 @@ const BookingForm = ({ initial = {}, onBooked = () => {} }) => {
   return (
     <div data-reveal className="reveal">
       <ToastContainer />
-      <form onSubmit={submit} className="bg-white p-4 rounded shadow">
-        <div className="mb-2">
-          <label className="block text-sm">Name</label>
-          <input name="name" value={form.name} onChange={handle} className="w-full p-2 border rounded bg-transparent" required />
+      <form onSubmit={submit} className="bg-white p-6 rounded-lg shadow-md">
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Name</label>
+          <input name="name" value={form.name} onChange={handle} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" required />
         </div>
-        <div className="mb-2">
-          <label className="block text-sm">Email</label>
-          <input type="email" name="email" value={form.email} onChange={handle} className="w-full p-2 border rounded bg-transparent" required />
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Email</label>
+          <input type="email" name="email" value={form.email} onChange={handle} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" required />
         </div>
-        <div className="mb-2">
-          <label className="block text-sm">Date</label>
-          <input type="date" name="date" value={form.date} onChange={handle} className="w-full p-2 border rounded bg-transparent" required />
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Date</label>
+          <input type="date" name="date" value={form.date} onChange={handle} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" required />
         </div>
-        <div className="mb-2">
-          <label className="block text-sm">Party Size</label>
-          <input type="number" name="partySize" value={form.partySize} onChange={handle} min={1} className="w-full p-2 border rounded bg-transparent" />
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Party Size</label>
+          <input type="number" name="partySize" value={form.partySize} onChange={handle} min={1} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         </div>
-        <div className="mb-2">
-          <label className="block text-sm">Tour (optional)</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Tour (optional)</label>
           {form.tour ? (
             <>
-              <input value={form.tourName || form.tour} readOnly className="w-full p-2 border rounded bg-transparent" />
+              <input value={form.tourName || form.tour} readOnly className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
               <input type="hidden" name="tour" value={form.tour} />
             </>
           ) : (
-            <input name="tour" value={form.tour} onChange={handle} className="w-full p-2 border rounded bg-transparent" placeholder="Tour slug or id" />
+            <input name="tour" value={form.tour} onChange={handle} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" placeholder="Tour slug or id" />
           )}
         </div>
-        <div className="mb-2">
-          <label className="block text-sm">Notes</label>
-          <textarea name="notes" value={form.notes} onChange={handle} className="w-full p-2 border rounded bg-transparent" />
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Notes</label>
+          <textarea name="notes" value={form.notes} onChange={handle} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         </div>
         <div className="flex gap-2">
           <button className="bg-green-600 text-white px-3 py-1 rounded" disabled={loading}>{loading ? 'Booking...' : 'Book'}</button>

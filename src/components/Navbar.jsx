@@ -28,8 +28,8 @@ const Navbar = () => {
       <div className="container mx-auto px-3 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-  <img src="/v3.png" alt="Logo" className="h-16 w-auto" />
-</Link>
+            <img src="/favicon.svg" alt="Logo" className="h-12 w-auto" />
+          </Link>
 
 
           <div className="flex items-center space-x-4">

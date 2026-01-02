@@ -55,32 +55,32 @@ const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) =
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="mb-4 bg-gray-50 p-4 rounded">
-      <div className="mb-2">
-        <label className="block text-sm">Title</label>
-        <input {...register('title', { required: 'Title is required', minLength: { value: 3, message: 'Minimum 3 characters' } })} className="w-full p-2 border rounded" />
+    <form onSubmit={handleSubmit(onSubmit)} className="mb-4 bg-white p-6 rounded-lg shadow-md">
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Title</label>
+        <input {...register('title', { required: 'Title is required', minLength: { value: 3, message: 'Minimum 3 characters' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.title && <div className="text-red-600 text-sm mt-1">{errors.title.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Slug</label>
-        <input {...register('slug', { required: 'Slug is required', minLength: { value: 3, message: 'Minimum 3 characters' } })} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Slug</label>
+        <input {...register('slug', { required: 'Slug is required', minLength: { value: 3, message: 'Minimum 3 characters' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.slug && <div className="text-red-600 text-sm mt-1">{errors.slug.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Duration</label>
-        <input {...register('duration')} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Duration</label>
+        <input {...register('duration')} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Price text</label>
-        <input {...register('priceText')} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Price text</label>
+        <input {...register('priceText')} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Description</label>
-        <textarea {...register('description', { required: 'Description is required', minLength: { value: 10, message: 'Minimum 10 characters' } })} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Description</label>
+        <textarea {...register('description', { required: 'Description is required', minLength: { value: 10, message: 'Minimum 10 characters' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.description && <div className="text-red-600 text-sm mt-1">{errors.description.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Image</label>
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Image</label>
         <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={handleUploaded} onFileSelect={handleFileSelect} />
         {image && <div className="mt-2">Uploaded: <img src={typeof image === 'string' ? image : (image.url || image.secure_url)} alt="tour" className="h-20 object-cover" /></div>}
       </div>

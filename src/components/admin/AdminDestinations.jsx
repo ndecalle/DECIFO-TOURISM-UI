@@ -84,28 +84,28 @@ const DestinationForm = ({ item = {}, onSave, onCancel }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submit)} className="mb-4 bg-gray-50 p-4 rounded">
-      <div className="mb-2">
-        <label className="block text-sm">Name</label>
-        <input {...register('name', { required: 'Name is required', minLength: { value: 2, message: 'Too short' } })} className="w-full p-2 border rounded" />
+    <form onSubmit={handleSubmit(submit)} className="mb-4 bg-white p-6 rounded-lg shadow-md">
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Name</label>
+        <input {...register('name', { required: 'Name is required', minLength: { value: 2, message: 'Too short' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.name && <div className="text-red-600 text-sm mt-1">{errors.name.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Slug</label>
-        <input {...register('slug', { required: 'Slug is required', minLength: { value: 2, message: 'Too short' } })} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Slug</label>
+        <input {...register('slug', { required: 'Slug is required', minLength: { value: 2, message: 'Too short' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.slug && <div className="text-red-600 text-sm mt-1">{errors.slug.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Short Description</label>
-        <input {...register('shortDescription', { required: 'Short description is required', minLength: { value: 5, message: 'Too short' } })} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Short Description</label>
+        <input {...register('shortDescription', { required: 'Short description is required', minLength: { value: 5, message: 'Too short' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
         {errors.shortDescription && <div className="text-red-600 text-sm mt-1">{errors.shortDescription.message}</div>}
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Description</label>
-        <textarea {...register('description')} className="w-full p-2 border rounded" />
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Description</label>
+        <textarea {...register('description')} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
       </div>
-      <div className="mb-2">
-        <label className="block text-sm">Image</label>
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Image</label>
         <AdminImageUpload initial={image ? (typeof image === 'string' ? { url: image } : image) : null} onUploaded={(data) => setImage(data.url || data.secure_url || data.url)} onFileSelect={(f) => setImage(f)} />
         {image && <div className="mt-2">Uploaded: <img src={typeof image === 'string' ? image : (image.url || image.secure_url)} alt="destination" className="h-20 object-cover" /></div>}
       </div>
