@@ -51,44 +51,4 @@ const slice = createSlice({ name: 'testimonials', initialState: { items: [], sta
 }
 })
 
-// Selectors
-
-export const selectTestimonials = (state) => state.testimonials.items
-
-export const selectTestimonialsStatus = (state) => state.testimonials.status
-
-export const selectTestimonialsError = (state) => state.testimonials.error
-
-export const selectTestimonialById = (state, id) => state.testimonials.items.find(testimonial => testimonial._id === id)
-// Selectors
-
-export const selectContacts = (state) => state.contacts.items
-
-export const selectContactsStatus = (state) => state.contacts.status
-
-export const selectContactsError = (state) => state.contacts.error
-
-export const selectContactById = (state, id) => state.contacts.items.find(contact => contact._id === id)
-// Selectors
-
-export const selectBookings = (state) => state.bookings.items
-
-export const selectBookingsStatus = (state) => state.bookings.status
-
-export const selectBookingsError = (state) => state.bookings.error
-
-export const selectBookingById = (state, id) => state.bookings.items.find(booking => booking._id === id)
-// Selectors
-
-export const selectImages = (state) => state.images.items
-
-export const selectImagesStatus = (state) => state.images.status
-
-export const selectImagesError = (state) => state.images.error
-
-export const selectImageById = (state, id) => state.images.items.find(image => image._id === id)
-
 export default slice.reducer
-
-
-

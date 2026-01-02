@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-
 import Hero from "../components/Hero"
-import DestinationCard from "../components/cards/DestinationCard"
-import TestimonialCard from "../components/cards/TestimonialCard"
-import Skeleton from "../components/ui/Skeleton"
+import DestinationCard from "../components/DestinationCard"
+import TestimonialCard from "../components/TestimonialCard"
 import { fetchDestinations } from '../store/destinationsSlice'
 import { fetchTestimonials } from '../store/testimonialsSlice'
 
@@ -48,12 +46,12 @@ const Home = () => {
           <source src="https://res.cloudinary.com/dzvxnmqnf/video/upload/v1743154330/202503281112_1_tkyef1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-0 left-0 w-full bg-black/50 dark:bg-black/20 -z-10" />
+        <div className="absolute top-0 left-0 w-full  bg-black/50 -z-10" />
         <Hero />
       </div>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-gray-50 reveal">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">Why Choose Us</h2>
@@ -137,7 +135,7 @@ const Home = () => {
       </section>
 
       {/* Featured Destinations */}
-      <section className="py-16 reveal">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">Featured Destinations</h2>
@@ -160,7 +158,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50 reveal">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">What People Say</h2>
@@ -184,23 +182,6 @@ const FeaturedDestinations = () => {
   useEffect(() => { dispatch(fetchDestinations()) }, [dispatch])
 
   const featured = items.slice(0, 3)
-
-  if (featured.length === 0) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {[...Array(3)].map((_, i) => (
-          <div key={i} className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <Skeleton className="w-full h-64" />
-            <div className="p-6">
-              <Skeleton className="h-6 w-3/4 mb-2" />
-              <Skeleton className="h-4 w-full mb-2" />
-              <Skeleton className="h-4 w-2/3" />
-            </div>
-          </div>
-        ))}
-      </div>
-    )
-  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-green-700">
@@ -226,26 +207,6 @@ const TestimonialsList = () => {
   useEffect(() => { dispatch(fetchTestimonials()) }, [dispatch])
 
   const approved = items.filter(t => t.approved)
-
-  if (approved.length === 0) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {[...Array(3)].map((_, i) => (
-          <div key={i} className="bg-white p-6 rounded-lg shadow-md">
-            <div className="flex items-center mb-4">
-              <Skeleton className="w-12 h-12 rounded-full mr-4" />
-              <div>
-                <Skeleton className="h-4 w-20 mb-1" />
-                <Skeleton className="h-3 w-16" />
-              </div>
-            </div>
-            <Skeleton className="h-4 w-full mb-2" />
-            <Skeleton className="h-4 w-3/4" />
-          </div>
-        ))}
-      </div>
-    )
-  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

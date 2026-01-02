@@ -18,14 +18,4 @@ const slice = createSlice({ name: 'images', initialState: { items: [], status: '
     .addCase(fetchImages.rejected, (s, a) => { s.status = 'failed'; s.error = a.payload })
 } })
 
-// Selectors
-
-export const selectImages = (state) => state.images.items
-
-export const selectImagesStatus = (state) => state.images.status
-
-export const selectImagesError = (state) => state.images.error
-
-export const selectImageById = (state, id) => state.images.items.find(image => image._id === id)
-
 export default slice.reducer

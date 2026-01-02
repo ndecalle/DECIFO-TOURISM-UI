@@ -41,14 +41,4 @@ const slice = createSlice({ name: 'bookings', initialState: { items: [], status:
 }
 })
 
-// Selectors
-
-export const selectBookings = (state) => state.bookings.items
-
-export const selectBookingsStatus = (state) => state.bookings.status
-
-export const selectBookingsError = (state) => state.bookings.error
-
-export const selectBookingById = (state, id) => state.bookings.items.find(booking => booking._id === id)
-
 export default slice.reducer

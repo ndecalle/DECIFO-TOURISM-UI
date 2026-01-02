@@ -14,7 +14,7 @@ export const store = configureStore({
     destinations: destinationsReducer,
     testimonials: testimonialsReducer,
     contacts: contactsReducer,
-    bookings: bookingsReducer,
-    images: imagesReducer
+    bookings: bookingsReducer
+    ,images: imagesReducer
   }
 })

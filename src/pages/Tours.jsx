@@ -1,9 +1,7 @@
+import { useTranslation } from "../utils/i18n";
+import TourCard from "../components/TourCard";
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-
-import { useTranslation } from "../utils/i18n";
-import TourCard from "../components/cards/TourCard";
-import Skeleton from "../components/ui/Skeleton";
 import { fetchTours } from '../store/toursSlice'
 
 const Tours = () => {
@@ -53,49 +51,33 @@ const Tours = () => {
       </section>
 
       {/* Featured Tours */}
-      <section className="py-16 reveal">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-green-700 mb-4">{t("tours.featuredTours.title")}</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">{t("tours.featuredTours.subtitle")}</p>
           </div>
 
-          {tours.length === 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="bg-white rounded-lg overflow-hidden shadow-lg">
-                  <Skeleton className="w-full h-64" />
-                  <div className="p-6">
-                    <Skeleton className="h-6 w-3/4 mb-2" />
-                    <Skeleton className="h-4 w-full mb-2" />
-                    <Skeleton className="h-4 w-1/2 mb-4" />
-                    <Skeleton className="h-10 w-24" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {tours.map((tour) => (
-                <TourCard
-                  key={tour._id}
-                  _id={tour._id}
-                  slug={tour.slug}
-                  title={tour.title}
-                  description={tour.description}
-                  duration={tour.duration}
-                  price={tour.priceText || tour.price}
-                  image={tour.image}
-                  link={`/tours/${tour.slug || tour._id}`}
-                />
-              ))}
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tours.map((tour) => (
+              <TourCard
+                key={tour._id}
+                _id={tour._id}
+                slug={tour.slug}
+                title={tour.title}
+                description={tour.description}
+                duration={tour.duration}
+                price={tour.priceText || tour.price}
+                image={tour.image}
+                link={`/tours/${tour.slug || tour._id}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Custom Tours */}
-      <section className="py-16 bg-gray-50 reveal">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-green-700 mb-4">{t("tours.customTours.title")}</h2>
@@ -140,7 +122,7 @@ const Tours = () => {
       </section>
 
       {/* Tour Information */}
-      <section className="py-16 reveal">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -185,7 +167,7 @@ const Tours = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-green-700 text-white reveal">
+      <section className="py-16 bg-green-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("tours.cta.title")}</h2>
           <p className="max-w-2xl mx-auto mb-8 text-lg">{t("tours.cta.subtitle")}</p>

@@ -3,10 +3,9 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
-
 import { useTranslation } from "../utils/i18n"
-import LanguageSelector from "../ui/LanguageSelector"
-import ThemeToggle from "../ui/ThemeToggle"
+import LanguageSelector from "./LanguageSelector"
+import ThemeToggle from "./ThemeToggle"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,7 +24,7 @@ const Navbar = () => {
   const inactiveLinkClass = "text-gray-700 hover:text-green-700 font-medium hover:underline text-sm"
 
   return (
-    <header data-reveal className="reveal bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-md sticky top-0 z-50"> {/* Added dark mode styles */}
+    <header data-reveal className="reveal bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50"> {/* Added dark mode styles */}
       <div className="container mx-auto px-3 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
