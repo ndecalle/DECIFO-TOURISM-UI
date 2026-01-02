@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useTranslation } from "../translationUtils.js"
+import { useTranslation } from "../utils/i18n"
 
 const Hero = () => {
   const { t } = useTranslation()

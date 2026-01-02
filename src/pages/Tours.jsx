@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { useTranslation } from "../translationUtils.js";
+import { useTranslation } from "../utils/i18n";
 import TourCard from "../components/cards/TourCard";
 import Skeleton from "../components/ui/Skeleton";
 import { fetchTours } from '../store/toursSlice'

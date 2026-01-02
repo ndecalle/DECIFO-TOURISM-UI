@@ -1,8 +1,10 @@
+"use client"
+
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 
-import { useTranslation } from "../../translationUtils.js"
+import { useTranslation } from "../utils/i18n"
 import LanguageSelector from "../ui/LanguageSelector"
 import ThemeToggle from "../ui/ThemeToggle"
 
@@ -27,7 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto px-3 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-  <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
+  <img src="/v3.png" alt="Logo" className="h-16 w-auto" />
 </Link>
 
 
