@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-3 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img src="/favicon.svg" alt="Logo" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Logo" className="h-12 w-auto rounded-md" />
           </Link>
 
 
