@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { useDispatch, useSelector } from 'react-redux'
-import { createContact } from '../store/contactsSlice'
+import { createContact } from '../../store/contactsSlice'
 
 const ContactForm = () => {
   const dispatch = useDispatch()
