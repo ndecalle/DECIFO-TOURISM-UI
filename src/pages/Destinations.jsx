@@ -1,4 +1,4 @@
-import { useTranslation } from "../utils/i18n";
+import { useTranslation } from "../translationUtils.js";
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDestinations } from '../store/destinationsSlice'

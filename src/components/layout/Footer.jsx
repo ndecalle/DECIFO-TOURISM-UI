@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
-import { useTranslation } from "../utils/i18n"
+import { useTranslation } from "../../translationUtils.js"
 
 const Footer = () => {
   const { t } = useTranslation()

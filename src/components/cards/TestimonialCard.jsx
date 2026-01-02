@@ -1,4 +1,4 @@
-import ImageWithSkeleton from "./ImageWithSkeleton"
+import ImageWithSkeleton from "../ui/ImageWithSkeleton"
 
 const TestimonialCard = ({ name, country, testimonial, image }) => {
   return (
