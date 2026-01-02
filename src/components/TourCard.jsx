@@ -2,8 +2,9 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import BookingForm from "./BookingForm"
 import ImageWithSkeleton from "./ImageWithSkeleton"
+import { formatDate } from "../utils/dateFormatter"
 
-const TourCard = ({ _id, title, description, duration, price, image, link, slug }) => {
+const TourCard = ({ _id, title, description, duration, price, image, link, slug, date }) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -15,7 +16,10 @@ const TourCard = ({ _id, title, description, duration, price, image, link, slug 
         <div className="p-6">
           <div className="flex justify-between items-start mb-2">
             <h3 className="text-xl font-bold text-green-700">{title}</h3>
-            <span className="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">{duration}</span>
+            <div className="text-right">
+              <div className="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">{duration}</div>
+              {date && <div className="text-xs text-gray-600 mt-1">Scheduled: {formatDate(date)}</div>}
+            </div>
           </div>
           <p className="text-gray-600 mb-4">{description}</p>
           <div className="flex justify-between items-center">
@@ -40,7 +44,7 @@ const TourCard = ({ _id, title, description, duration, price, image, link, slug 
                 <button onClick={() => setOpen(false)} className="text-gray-600 hover:text-gray-800">Close</button>
               </div>
               <BookingForm
-                initial={{ tour: _id || slug, tourName: title }}
+                initial={{ tour: _id || slug, tourName: title, date: date }}
                 onBooked={() => setOpen(false)}
               />
               <div className="mt-3 text-right">

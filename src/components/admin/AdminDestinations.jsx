@@ -45,9 +45,12 @@ const AdminDestinations = () => {
       <ul>
         {items.map(d => (
           <li key={d._id} className="p-2 border-b flex justify-between items-center">
-            <div>
-              <div className="font-bold">{d.name}</div>
-              <div className="text-sm text-gray-600">{d.shortDescription}</div>
+            <div className="flex items-center gap-4">
+              {d.image && <img src={d.image} alt={d.name} className="w-20 h-14 object-cover rounded" />}
+              <div>
+                <div className="font-bold">{d.name}</div>
+                <div className="text-sm text-gray-600">{d.shortDescription}</div>
+              </div>
             </div>
             <div className="space-x-2">
               <button className="px-2 py-1 bg-yellow-400 rounded" onClick={() => setEditing(d)}>Edit</button>

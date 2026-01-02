@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { createTour, updateTour } from '../../store/toursSlice'
 import AdminImageUpload from './AdminImageUpload'
 import { useForm } from 'react-hook-form'
+import { formatDate } from '../../utils/dateFormatter'
 
 const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) => {
   const dispatch = useDispatch()
@@ -14,12 +15,13 @@ const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) =
       slug: tour.slug || '',
       description: tour.description || '',
       duration: tour.duration || '',
-      priceText: tour.priceText || ''
+      priceText: tour.priceText || '',
+      date: tour.date ? (new Date(tour.date)).toISOString().slice(0,10) : ''
     }
   })
 
   useEffect(() => {
-    reset({ title: tour.title || '', slug: tour.slug || '', description: tour.description || '', duration: tour.duration || '', priceText: tour.priceText || '' })
+    reset({ title: tour.title || '', slug: tour.slug || '', description: tour.description || '', duration: tour.duration || '', priceText: tour.priceText || '', date: tour.date ? (new Date(tour.date)).toISOString().slice(0,10) : '' })
     setImage(tour.image || null)
   }, [tour, reset])
 
@@ -56,6 +58,11 @@ const AdminTourForm = ({ tour = {}, onSaved = () => {}, onCancel = () => {} }) =
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="mb-4 bg-white p-6 rounded-lg shadow-md">
+      {tour && tour.createdAt && <div className="mb-4 text-sm text-gray-600">Created: {formatDate(tour.createdAt)}</div>}
+      <div className="mb-4">
+        <label className="block text-gray-700 font-medium mb-2 text-sm">Tour date</label>
+        <input type="date" {...register('date')} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />
+      </div>
       <div className="mb-4">
         <label className="block text-gray-700 font-medium mb-2 text-sm">Title</label>
         <input {...register('title', { required: 'Title is required', minLength: { value: 3, message: 'Minimum 3 characters' } })} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-white" />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import AdminTourForm from './AdminTourForm'
+import { getRelativeTimeString, formatDate } from '../../utils/dateFormatter'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchTours, deleteTour } from '../../store/toursSlice'
 
@@ -28,9 +29,14 @@ const AdminTourList = () => {
       <ul className="space-y-4">
         {(status === 'loading' ? [] : tours).map(t => (
           <li key={t._id} className="border p-3 rounded flex justify-between items-center">
-            <div>
-              <div className="font-bold">{t.title}</div>
-              <div className="text-sm text-gray-600">{t.duration} — {t.priceText || t.price}</div>
+            <div className="flex items-center gap-4">
+              {t.image && <img src={t.image} alt={t.title} className="w-20 h-14 object-cover rounded" />}
+              <div>
+                <div className="font-bold">{t.title}</div>
+                <div className="text-sm text-gray-600">{t.duration} — {t.priceText || t.price}</div>
+                {t.date && <div className="text-sm text-gray-600">Scheduled: {formatDate(t.date)}</div>}
+                {t.createdAt && <div className="text-xs text-gray-500">Created: {getRelativeTimeString(t.createdAt)}</div>}
+              </div>
             </div>
             <div className="space-x-2">
               <button className="px-2 py-1 bg-yellow-400 rounded" onClick={() => setEditing(t)}>Edit</button>

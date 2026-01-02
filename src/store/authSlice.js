@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { API_BASE } from '../services/config'
-import { create } from 'node:domain'
 
 export const login = createAsyncThunk('auth/login', async ({ email, password, baseUrl }) => {
   const res = await fetch(API_BASE + '/api/auth/login', {

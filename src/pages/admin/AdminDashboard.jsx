@@ -63,7 +63,7 @@ const AdminDashboard = () => {
             </div>
           )}
           <button
-            className="w-full bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded transition"
+            className="w-full bg-green-500 hover:bg-green-700 text-white px-3 py-2 rounded transition"
             onClick={() => { localStorage.removeItem('token'); window.location.href = '/admin/login' }}
           >
             Logout

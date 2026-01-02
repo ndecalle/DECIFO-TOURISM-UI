@@ -69,6 +69,7 @@ const Tours = () => {
                 duration={tour.duration}
                 price={tour.priceText || tour.price}
                 image={tour.image}
+                date={tour.date}
                 link={`/tours/${tour.slug || tour._id}`}
               />
             ))}
